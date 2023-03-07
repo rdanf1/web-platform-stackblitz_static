@@ -6,4 +6,7 @@
 
 Replit + Vscode + Free : They did it !!! :)
 
-_Warning_ : **There's a .js file included**
+_Warning_ : DYN **There's a .js file included** DYN
+
+Take a look :
+https://web-platform-okiewt.stackblitz.io
