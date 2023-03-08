@@ -39,10 +39,10 @@ nav a {
   min-width: 6rem;
   padding: 0.2rem;
   border-radius: 0.2rem;
-  border: solid 3px #aaa;
+  border: solid 3px rgb(73, 118, 201);
   text-align: center;
   text-decoration: none;
-  color: #555;
+  color: rgb(54, 21, 21);
 /*color: linear-gradient(to left, red, yellow, green, cyan, blue, violet);
   background-color: linear-gradient(to right, red, yellow, green, cyan, blue, violet); */
   margin-left: 3px;
@@ -59,9 +59,9 @@ main {
   padding: 0.5rem;
 }
 
-h1, h2, h3, h4 { 
-  font-weight: bold; 
+h1, h2, h3, h4, a { 
+  font-weight: semi-bold; 
 /*font-size: 1.5rem; */ 
   color: black;
-  mix-blend-mode: addition;
+  mix-blend-mode: substract;
 }
