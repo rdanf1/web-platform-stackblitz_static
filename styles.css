@@ -3,7 +3,8 @@
 }
 
 body {
-  //background-image: linear-gradient(to right, red, yellow, green cyan, blue, violet);
+  /*background-image: linear-gradient(to right, red, yellow, green cyan, blue, violet);
+  */
   background-image: url("./img_dan2-2.png");
   margin: 0;
   font-family: system-ui, sans-serif;
