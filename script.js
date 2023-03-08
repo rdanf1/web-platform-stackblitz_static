@@ -4,7 +4,7 @@ try {
     document.getElementById("nav-p2").style.border="solid 8px rgb(73, 118 ,201)";
   } 
 } catch {
-  console.log('MRD');
+  console.log('MRD pas cet id-iot ICI !!! :P');
 }
 
 
