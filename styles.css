@@ -16,7 +16,7 @@ body {
       linear-gradient(336deg, rgba(0, 0, 255, 0.8),
                               rgba(0, 0, 255, 0) 35%),*/
     linear-gradient(to left, transparent, rgb(44, 8, 83) 100%),
-    url(./img/img_dan2-1.png);
+    url(./img_dan2-2.png);
 }
 
 nav {
@@ -48,13 +48,13 @@ nav a {
   margin-right: 3px;
   justify-content : center;
 }
-
+/*
 nav a[aria-current='page'] {
     color: rgb(17, 49, 24);
 /*background-color: linear-gradient(to right, red, yellow, green, cyan, blue, violet);  #3a0836;*/
-/* padding: 0.5rem; */
+/* padding: 0.5rem; 
 }
-
+*/
 main {
   padding: 0.5rem;
 }
