@@ -18,5 +18,3 @@ if (document.title==="Autre Page (pour les 2)") {
   /*, ;";*/
 
 console.log(document.getElementsByTagName("body")[0].style.backgroundImage)
-
-
