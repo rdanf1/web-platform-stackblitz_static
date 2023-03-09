@@ -7,7 +7,8 @@ body {
   /*background-color: transparent white;*/
   color: black;
   font-family: system-ui, sans-serif;
-  
+  height: 100%;
+
   background-image: 
     linear-gradient(to left, transparent, rgb(44, 8, 83) 100%),
     url("./img/img_dan2-1.png")
@@ -70,6 +71,7 @@ h1, h2, /*h3,*/ h4, a {
 /*font-size: 1.5rem; */ 
   color: black;
   mix-blend-mode: substract;
+  height: 100%;
 }
 
 #nav-p2 a {
