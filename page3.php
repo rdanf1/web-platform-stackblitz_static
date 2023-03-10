@@ -19,8 +19,7 @@
     ini_set("log_errors", 1);
     ini_set("error_log", "/php/php-error.log");
 
-
-    include 'like.php';
+    /* include 'like.php';*/
     
     $likeFile = 'like.txt';
     /* check if the like file exists*/
