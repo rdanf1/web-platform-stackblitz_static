@@ -4,9 +4,32 @@
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
   color: black;
-  background-color: white;
+  font-family: system-ui, sans-serif;
+  height: 100%;
+
+  background-image: 
+    linear-gradient(to left, transparent, rgb(44, 8, 83) 100%),
+    url("./img/img_dan2-1.png")
+}
+
+#body-p2 {
+  margin: 0;
+  color: black;
+  font-family: system-ui, sans-serif;
+  
+  background-image: 
+    linear-gradient(to left, transparent, rgb(238, 203, 76) 114%),
+    url("./img/img_dan2-1.png")
+}
+
+#body-p3, #nav-p3 {
+  margin: 0;
+  color: black;
+  font-family: system-ui, sans-serif;
+  justify-content : right;
+  background-image: 
+    linear-gradient(to left, transparent, rgb(190, 153, 27) 200%)
 }
 
 nav {
@@ -14,33 +37,50 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
+  padding: 0.2rem;
+  gap: 0.2rem;
+  border: solid 3px rgb(119, 105, 150);
+  background-color: goldenrod;
+  /*background-image: url("./img_dan2-2.png");
+  /* background-image: linear-gradient(to left, violet, yellow, cyan, green, blue, red);
+  /* background-color: #eee;*/
 }
 
 nav a {
-  display: inline-block;
-  min-width: 9rem;
-  padding: 0.5rem;
+  display: flex;
+  min-width: 6rem;
+  padding: 0.2rem;
   border-radius: 0.2rem;
-  border: solid 1px #aaa;
+  border: solid 3px rgb(2, 44, 159);
   text-align: center;
   text-decoration: none;
-  color: #555;
+  color: rgb(8, 35, 7);
+/*color: linear-gradient(to left, red, yellow, green, cyan, blue, violet);
+  background-color: linear-gradient(to right, red, yellow, green, cyan, blue, violet); */
+  margin-left: 3px;
+  margin-right: 3px;
+  justify-content : center;
 }
 
-nav a[aria-current='page'] {
-  color: #000;
-  background-color: #d4d4d4;
-}
+nav a[aria-current='page2'] {
+  background-color: rgb(171, 212, 95);
+  /*background-color: 
+  linear-gradient(to right, red, yellow, green, cyan, blue, violet);*/
+  padding: 0.8rem; 
+} 
 
 main {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 1.5rem;
+h1, h2, /*h3,*/ h4, a { 
+  font-weight: semi-bold; 
+/*font-size: 1.5rem; */ 
+  color: black;
+  mix-blend-mode: substract;
+  height: 100%;
 }
+
+#nav-p2 a {
+  border: solid 4px rgb(155, 101, 154);
+} 
