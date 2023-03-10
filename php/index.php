@@ -9,7 +9,7 @@
       <input type="submit" name="create_table" id="create_table" value="create a table"/>
     </form>
     
-   <?php echo'<p>Hello World : $tablename </p>';?>
+   <?php echo"<p>Hello World : $tablename </p>";?>
 
    <!-- DR - Was a little small from Android 
   <script type="text/stylesheet">
