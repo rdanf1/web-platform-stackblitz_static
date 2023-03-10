@@ -18,14 +18,16 @@
         file_put_contents($msgFile, $data . "\n", FILE_APPEND);
         
         /* log */
-        echo "<p style='font-size: 2rem;'>Written $Msg<br></p>";
+        echo "<p style='font-size: 2rem;'>Written : $Msg<br></p>";
 
         fclose($file);
     } else {
     /* if file does not exist create it for the first time with count 1 */
-        file_put_contents($msgFile, "<p style='font-size: 2rem; class=bg-warning> Liste des Messages<br>'");
+        file_put_contents($msgFile, "<p style='font-size: 3rem;'> Liste des Messages <br>" . "\n");
         $data = "<p style='font-size: 2rem;'> $Msg<br></p>";
         file_put_contents($msgFile, $data . "\n", FILE_APPEND);
+        /* log */
+        echo "<p style='font-size: 2rem;'>Written : $Msg<br></p>";
     }
 } else {
     return 'Something Wrong!';
