@@ -13,9 +13,9 @@
     /* check if the like file exists*/
     if(file_exists($msgFile)) {
         /* read only the first line of the file as we don't intend to have more */
-        $file = fopen($msgFile, 'w');
+        $file = fopen($msgFile, 'a');
         $data = "<p style='font-size: 2rem;'> $Msg<br></p>";
-        file_put_contents($msgFile, $data . "\n", FILE_APPEND);
+        file_put_contents($msgFile, $data . "\n"); /*, FILE_APPEND);
         
         /* log */
         echo "<p style='font-size: 2rem;'>Written $Msg<br></p>";
@@ -23,7 +23,7 @@
         fclose($file);
     } else {
     /* if file does not exist create it for the first time with count 1 */
-        file_put_contents($msgFile, "<p style='font-size: 2rem;'> NO MESSAGE<br>.PHP_EOL;");
+        file_put_contents($msgFile, "<p style='font-size: 2rem;'> NO MESSAGE<br>");
         echo '1';
     }
 } else {
