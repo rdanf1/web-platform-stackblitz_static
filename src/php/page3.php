@@ -25,9 +25,9 @@
     /* after going to form in /php/index.php */ 
     /*if (isset($table_name) && ($table_name === true))*/
     /*if (@$table_name === true) { }*/
-    $table_name = $_POST['table_name'];
-    if (isset($table_name)) {
-      echo "<p style='font-size: 3rem;'>$table_name</p>";
+    $table_name = $_POST['Msg'];
+    if (isset($Msg)) {
+      echo "<p style='font-size: 2rem;'>$Msg</p>";
     }
 
     /* include 'like.php';*/
