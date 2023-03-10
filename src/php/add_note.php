@@ -12,7 +12,7 @@
     if(file_exists($msgFile)) {
         /* read only the first line of the file as we don't intend to have more */
         $file = fopen($msgFile, 'w');
-        $data = "<p style='font-size: 2rem;'> $Msg<br></p>.PHP_EOL;"
+        $data = "<p style='font-size: 2rem;'> $Msg<br></p>.PHP_EOL;";
         fwrite($file, $data);
         
         /* log */
