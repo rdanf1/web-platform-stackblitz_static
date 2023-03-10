@@ -12,7 +12,23 @@
     />
   </head>
   <body id="body-p3">
-    <?php echo'<p>Hello World</p>';?>
+    <?php
+    $likeFile = 'like.txt';
+    /* check if the like file exists*/
+    if(file_exists($likeFile)) {
+        /* read the only the first file of the file as we don't intend to have more */
+        $file = fopen($likeFile, 'r');
+        $like = fgets($file);
+        fclose($file);
+        if($like) {
+            /* if we get the line split the string "likes=number" and get the existing count */
+            $likeCount = end(explode('=', $like));
+        }
+    } else {
+        $likeCount = 0;
+    }
+    ?>
+<a href="javascript:void(0)" onclick="like()">Like <span id="count"><?php echo $likeCount ?></span></a>
     <nav class="navbar navbar-expand-sm navbar-light bg-warning" aria-label="Fourth navbar example(Bootstrap 2023)">
       <div class="container-fluid">
         <a class="navbar-brand" href="/index.html">
