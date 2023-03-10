@@ -1,17 +1,5 @@
 console.log('Hello my children !');
 
-function like(){
-    $.ajax({
-        type:"POST",
-        data: {like:true},
-        url: "like.php",
-        success: function(result){
-            $('#count').text(result);
-        }
-    });
-}
-
-
 /*
 try {
 /*  if (document.title==="Autre Page (pour les 2)") {
@@ -29,4 +17,5 @@ if (document.title==="Autre Page (pour les 2)") {
 } 
   /*, ;";*/
 
-console.log(document.getElementsByTagName("body")[0].style.backgroundImage)
+
+  console.log(document.getElementsByTagName("body")[0].style.backgroundImage)
