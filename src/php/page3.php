@@ -27,7 +27,7 @@
     /*if (@$table_name === true) { }*/
     $table_name = $_POST['table_name'];
     if (isset($table_name)) {
-      echo "<p style='font-size: 4rem;'>$table_name</p>";
+      echo "<p style='font-size: 3rem;'>$table_name</p>";
     }
 
     /* include 'like.php';*/
