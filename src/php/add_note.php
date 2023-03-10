@@ -23,7 +23,7 @@
         fclose($file);
     } else {
     /* if file does not exist create it for the first time with count 1 */
-        file_put_contents($msgFile, "<p style='font-size: 2rem; class=""bg-warning""'> Liste des Messages<br>");
+        file_put_contents($msgFile, "<p style='font-size: 2rem; class=bg-warning> Liste des Messages<br>'");
         $data = "<p style='font-size: 2rem;'> $Msg<br></p>";
         file_put_contents($msgFile, $data . "\n", FILE_APPEND);
     }
