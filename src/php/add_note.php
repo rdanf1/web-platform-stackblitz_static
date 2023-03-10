@@ -1,11 +1,13 @@
 <?php
 
-/*  $Msg = $_POST['Msg'];
+  
   if (isset($Msg)) {
     echo "<p style='font-size: 2rem;'>$Msg<br></p>";
   } */
 
   if(isset($_POST['Msg']) && $_POST['Msg'] == true) {
+    
+    $Msg = $_POST['Msg'];
 
     $msgFile = 'msgFile.html';
     /* check if the like file exists*/
