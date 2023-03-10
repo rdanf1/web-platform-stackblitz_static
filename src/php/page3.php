@@ -60,7 +60,7 @@
           <u style="text-decoration: overline underline">D</u>aniel'
           <u style="text-decoration: overline underline">S</u>
         </a>
-        <a href="/src/php/index.php" aria-current="php index file">php page</a>
+        <a href="/src/php/note_form.php" aria-current="php index file">Saisie note</a>
         <button 
           class="navbar-toggler collapsed" 
           type="button"
