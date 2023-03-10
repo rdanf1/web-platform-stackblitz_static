@@ -2,7 +2,7 @@
  <head>
   <title>1st PHP Page (testing Motor)</title>
  </head>
- <body style="font-size: 24px;"> <!---->
+ <body style="font-size: 24rem;"> <!---->
 
    <?php echo'<p>Hello World</p>';?>
 
