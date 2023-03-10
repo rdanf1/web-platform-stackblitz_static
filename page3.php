@@ -13,7 +13,7 @@
     <script type="text/javascript" src="php.js"></script>
   </head>
   <body id="body-p3">
-   
+
     <?php
     /* THESE ARE TOTALLY IGNORED... So Dev can't <ignore> PHP errors pops 
        IN MIDDLE OF HTML page !!! ( I no longer like PHP !!! :P )
