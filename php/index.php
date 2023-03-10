@@ -2,7 +2,7 @@
  <head>
   <title>1st PHP Page (testing Motor)</title>
  </head>
- <body style="font-size: 18rem;"> <!---->
+ <body style="font-size: 8rem;"> <!---->
 
     <form action="process.php" method="POST">
       <input type="text" id="table_name" name="table_name" placeholder="name" />
