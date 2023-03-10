@@ -10,7 +10,7 @@ if(isset($_POST['like']) && $_POST['like'] == true)
         fclose($file);
         if($like) {
             /* if we get the line split the string "likes=number" and get the existing count */
-            $explode=explode('=', $like)
+            $explode=explode('=', $like);
             $likeCount = end($explode);
             $likeCount++; /* increment the count by one */
             file_put_contents($likeFile, 'likes=' . $likeCount); /* write the new count the same file and save it */
