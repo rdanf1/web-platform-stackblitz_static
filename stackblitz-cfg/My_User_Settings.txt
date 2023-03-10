@@ -165,12 +165,12 @@
    * Controls the display of line numbers. Can be 'on', 'off', 'relative' or 'interval'.
    * Defaults to 'on'.
    */
-  "editor.lineNumbers": "off",
+  "editor.lineNumbers": "on",
   /**
    * Controls the width of line numbers, by reserving horizontal space for rendering at least an amount of digits.
    * Defaults to 5.
    */
-  "editor.lineNumbersMinChars": 5,
+  "editor.lineNumbersMinChars": 3,
   /**
    * Controls whether the editor should detect links and make them clickable.
    * Defaults to true.
