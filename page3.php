@@ -48,8 +48,6 @@
     
     ?>
 
-    <button type="button" href="javascript:void(0)" onclick="like()">Click me ( Likes : <span id="count"><?php echo $likeCount ?></span> )</button>
-    
     <nav class="navbar navbar-expand-sm navbar-light bg-warning" aria-label="Fourth navbar example(Bootstrap 2023)">
       <div class="container-fluid">
         <a class="navbar-brand" href="/index.html">
@@ -99,6 +97,11 @@
       </div>
     </nav>
     <main>
+    
+      <button type="button" href="javascript:void(0)" onclick="like()">
+        Click me ( Likes :  <span id="count"><?php echo $likeCount ?></span> )
+      </button>
+
       <div class="container">
         <div class="row align-items-start col-12">
           <div class="col-2 justify-center">
