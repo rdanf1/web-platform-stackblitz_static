@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['like']) && $_POST['like'] == true)
 {
-    $likeFile = '/data/like.txt';
+    $likeFile = 'like.txt';
     /* check if the like file exists*/
     if(file_exists($likeFile)) {
         /* read the only the first file of the file as we don't intend to have more */
