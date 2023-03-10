@@ -27,7 +27,11 @@
         fclose($file);
         if($like) {
             /* if we get the line split the string "likes=number" and get the existing count */
-            $likeCount = end(explode('=', $like));
+            /* explode var to store explode() result and avoid notice :
+            Notice: Only variables should be passed by reference 
+                               in /home/rdanbdd/www/page3.php on line 30"*/
+            $explode=explode('=', $like)
+            $likeCount = end($explode);
         }
     } else {
         $likeCount = 0;
