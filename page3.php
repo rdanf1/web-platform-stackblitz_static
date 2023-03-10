@@ -26,8 +26,9 @@
 
     /* after going to form in /php/index.php */ 
     /*if (isset($table_name) && ($table_name === true))*/
+    $table_name = $_POST['table_name'];
     if (@$table_name === true) {
-      $table_name = $_POST['table_name'];
+
       echo "<p>$table_name</p>";
     }
     
