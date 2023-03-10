@@ -14,8 +14,8 @@
     if(file_exists($msgFile)) {
         /* read only the first line of the file as we don't intend to have more */
         $file = fopen($msgFile, 'w');
-        $data = "<p style='font-size: 2rem;'> $Msg<br></p>.PHP_EOL;";
-        fwrite($file, $data);
+        $data = "<p style='font-size: 2rem;'> $Msg<br></p>";
+        file_put_contents($msgFile, implode("\n", $data) . "\n", FILE_APPEND);
         
         /* log */
         echo "<p style='font-size: 2rem;'>Written $Msg<br></p>";
