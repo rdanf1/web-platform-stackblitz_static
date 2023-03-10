@@ -7,7 +7,7 @@
     <nav class="navbar navbar-expand-sm navbar-light bg-warning" aria-label="Fourth navbar example(Bootstrap 2023)">
       <div class="container-fluid">
         <a class="navbar-brand" href="/src/php/page3.php">
-          <u style="text-decoration: overline underline">R</u>etour'
+          <u style="text-decoration: overline underline; font-size: 3rem">R</u>etour
         </a>
       </div>
     </nav
