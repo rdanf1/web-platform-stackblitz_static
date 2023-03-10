@@ -28,7 +28,7 @@
     /*if (isset($table_name) && ($table_name === true))*/
     $table_name = $_POST['table_name'];
     /*if (@$table_name === true) { }*/
-    if (isset($table_name) {
+    if isset($table_name) {
       echo "<p>$table_name</p>";
     }
 
