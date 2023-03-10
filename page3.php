@@ -12,7 +12,11 @@
     />
   </head>
   <body id="body-p3">
+   
     <?php
+    
+    include 'like.php';
+    
     $likeFile = 'like.txt';
     /* check if the like file exists*/
     if(file_exists($likeFile)) {
@@ -27,7 +31,10 @@
     } else {
         $likeCount = 0;
     }
+    
+    
     ?>
+
 <a href="javascript:void(0)" onclick="like()">Like <span id="count"><?php echo $likeCount ?></span></a>
     <nav class="navbar navbar-expand-sm navbar-light bg-warning" aria-label="Fourth navbar example(Bootstrap 2023)">
       <div class="container-fluid">
