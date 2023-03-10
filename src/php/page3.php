@@ -56,7 +56,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-light bg-warning" aria-label="Fourth navbar example(Bootstrap 2023)">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html">
+        <a class="navbar-brand" href="/src/index.html">
           <u style="text-decoration: overline underline">D</u>aniel'
           <u style="text-decoration: overline underline">S</u>
         </a>
