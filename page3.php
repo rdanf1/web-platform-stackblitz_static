@@ -15,10 +15,13 @@
   <body id="body-p3">
    
     <?php
-    error_reporting(E_ALL & ~E_NOTICE);
+    /*error_reporting(E_ALL & ~E_NOTICE);
     ini_set("log_errors", 1);
     ini_set("error_log", "/php/php-error.log");
-    ini_set("error_reporting", E_ALL & ~E_NOTICE);
+    ini_set("error_reporting", E_ALL & ~E_NOTICE);*/
+    error_reporting = E_ALL & ~E_DEPRECATED
+    display_errors = Off
+    log_errors = On
 
     /* include 'like.php';*/
     
