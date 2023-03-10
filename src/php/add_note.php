@@ -1,5 +1,22 @@
-<?php
 
+<main>
+    <nav class="navbar navbar-expand-sm navbar-light bg-warning" aria-label="Fourth navbar example(Bootstrap 2023)">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/src/index.html">
+          <u style="text-decoration: underline">R</u>etour
+        </a>
+        <a href="/src/php/note_form.php" aria-current="php index file">
+           <u style="text-decoration: underline">S</u>aisie Nouveau Message
+        </a>
+        <a href="/src/php/msgFile.html" aria-current="php index file">
+           <u style="text-decoration: underline">Liste </u>Messages
+        </a>
+      </div>
+    </nav
+</main>
+
+
+<?php
   /*
   if (isset($Msg)) {
     echo "<p style='font-size: 2rem;'>$Msg<br></p>";
@@ -32,3 +49,4 @@
 } else {
     return 'Something Wrong!';
 }
+

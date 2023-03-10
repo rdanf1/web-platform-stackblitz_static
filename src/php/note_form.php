@@ -3,6 +3,15 @@
   <title>Saisie du message</title>
  </head>
  <body style="font-size: 8rem;"> 
+ 
+    <nav class="navbar navbar-expand-sm navbar-light bg-warning" aria-label="Fourth navbar example(Bootstrap 2023)">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/src/php/page3.php">
+          <u style="text-decoration: overline underline">R</u>etour'
+        </a>
+      </div>
+    </nav
+
     <!--APRES LES TESTS-->
     <form action="/src/php/add_note.php" method="POST">
     <!--<form action="./page3.php" method="POST">-->
