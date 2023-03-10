@@ -17,8 +17,8 @@ if(isset($_POST['like']) && $_POST['like'] == true)
             $explode=explode('=', $like);
             /* to trigger the notice described above... 
             $likeCount = end(explode('=', $like));                             */
-            
             $likeCount = end($explode);
+            
             $likeCount++; /* increment the count by one */
             file_put_contents($likeFile, 'likes=' . $likeCount); /* write the new count the same file and save it */
             echo $likeCount; /* return the like count to the ajax request */

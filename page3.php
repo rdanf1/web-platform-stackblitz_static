@@ -15,7 +15,10 @@
   <body id="body-p3">
    
     <?php
-    error_reporting(E_ALL & ~E_NOTICE);
+    /* THESE ARE TOTALLY IGNORED... So Dev can't <ignore> PHP errors pops 
+       IN MIDDLE OF HTML page !!! ( I no longer like PHP !!! :P )
+       => TODO : Perfect coding OR Try Catch */
+    error_reporting(E_ALL & ~E_NOTICE); /* should avoid notices */
     ini_set("log_errors", 1);
     ini_set("display_errors", 0);
     ini_set("error_log", "/php/php-error.log");
