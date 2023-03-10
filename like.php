@@ -10,7 +10,14 @@ if(isset($_POST['like']) && $_POST['like'] == true)
         fclose($file);
         if($like) {
             /* if we get the line split the string "likes=number" and get the existing count */
+            
+            /* - DR- explode var to store explode() result and avoid notice :
+            Notice: Only variables should be passed by reference 
+            in /home/rdanbdd/www/like.php on line..."                          */
             $explode=explode('=', $like);
+            /* to trigger the notice described above... 
+            $likeCount = end(explode('=', $like));                             */
+            
             $likeCount = end($explode);
             $likeCount++; /* increment the count by one */
             file_put_contents($likeFile, 'likes=' . $likeCount); /* write the new count the same file and save it */
