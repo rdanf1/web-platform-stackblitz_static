@@ -60,7 +60,7 @@
           <u style="text-decoration: overline underline">D</u>aniel'
           <u style="text-decoration: overline underline">S</u>
         </a>
-        <a href="/php/index.php" aria-current="php index file">php page</a>
+        <a href="/src/php/index.php" aria-current="php index file">php page</a>
         <button 
           class="navbar-toggler collapsed" 
           type="button"
@@ -79,10 +79,10 @@
         <div class="navbar-collapse collapse" id="navbarsExample04" style="">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html">Accueil</a>
+              <a class="nav-link active" aria-current="page" href="/src/index.html">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/page2.html">ZOUZOUS</a>
+              <a class="nav-link" href="/src/page2.html">ZOUZOUS</a>
             </li>
             <!--<li class="nav-item">
               <a class="nav-link disabled">HS</a>
