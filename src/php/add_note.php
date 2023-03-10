@@ -15,7 +15,7 @@
         /* read only the first line of the file as we don't intend to have more */
         $file = fopen($msgFile, 'a');
         $data = "<p style='font-size: 2rem;'> $Msg<br></p>";
-        file_put_contents($msgFile, $data . "\n"); /*, FILE_APPEND);
+        file_put_contents($msgFile, $data . "\n", FILE_APPEND);
         
         /* log */
         echo "<p style='font-size: 2rem;'>Written $Msg<br></p>";
