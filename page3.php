@@ -24,6 +24,14 @@
     ini_set("error_log", "/php/php-error.log");
     ini_set("error_reporting", E_ALL & ~E_NOTICE);
 
+    /* after going to form in /php/index.php */ 
+    /*if (isset($table_name) && ($table_name === true))*/
+    if (@$table_name === true) {
+      $table_name = $_POST['table_name'];
+      echo "<p>$table_name</p>";
+    }
+    
+
     /* include 'like.php';*/
     
     $likeFile = 'like.txt';
