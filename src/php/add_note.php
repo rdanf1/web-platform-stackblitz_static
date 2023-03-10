@@ -1,6 +1,6 @@
 <?php
 
-  
+  /*
   if (isset($Msg)) {
     echo "<p style='font-size: 2rem;'>$Msg<br></p>";
   } */
