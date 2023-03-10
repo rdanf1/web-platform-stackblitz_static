@@ -7,7 +7,7 @@
 
   if(isset($_POST['Msg']) && $_POST['Msg'] == true) {
 
-    $msgFile = '/src/msgFile.html';
+    $msgFile = 'msgFile.html';
     /* check if the like file exists*/
     if(file_exists($msgFile)) {
         /* read only the first line of the file as we don't intend to have more */
