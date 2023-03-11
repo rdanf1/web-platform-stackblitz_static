@@ -40,7 +40,8 @@
         fclose($file);
     } else {
     /* if file does not exist create it for the first time with count 1 */
-        file_put_contents($msgFile, "<p style='font-size: 3rem; background: MediumSeaGreen'" . " class='bg-warning'" . "> Liste des Messages <br>" . "\n");
+        /*file_put_contents($msgFile, "<p style='font-size: 3rem; background: MediumSeaGreen'" . " class='bg-warning'" . "> Liste des Messages <br>" . "\n");*/
+        file_put_contents($msgFile, "<div w3-include-html='msgFile.h'></div>");
         $data = "<p style='font-size: 3rem;'> $Msg<br></p>";
         file_put_contents($msgFile, $data . "\n", FILE_APPEND);
         /* log */

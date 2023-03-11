@@ -62,7 +62,8 @@ nav a {
   justify-content : center;
 }
 
-nav a[aria-current='page2'] {
+nav a[aria-current='page2']
+#bt_likes {
   background-color: rgb(171, 212, 95);
   /*background-color: 
   linear-gradient(to right, red, yellow, green, cyan, blue, violet);*/
@@ -70,8 +71,7 @@ nav a[aria-current='page2'] {
 } 
 
 nav a[aria-current='page3'],
-nav a[aria-current='Saisie Msg'],
-#bt_likes  {
+nav a[aria-current='Saisie Msg'] {
   background-color: rgb(197, 98, 197);
   /*background-color: 
   linear-gradient(to right, red, yellow, green, cyan, blue, violet);*/
