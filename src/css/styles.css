@@ -10,7 +10,7 @@ body {
 
   background-image: 
     linear-gradient(to left, transparent, rgb(44, 8, 83) 100%),
-    url("./img/img_dan2-1.png")
+    url("./img_dan-3.jpg")
 }
 
 #body-p2 {
@@ -20,7 +20,7 @@ body {
   
   background-image: 
     linear-gradient(to left, transparent, rgb(238, 203, 76) 114%),
-    url("./img/img_dan2-1.png")
+    url("./img_dan-3.jpg")
 }
 
 #body-p3, #nav-p3 {
@@ -62,11 +62,24 @@ nav a {
   justify-content : center;
 }
 
-nav a[aria-current='page2'] {
+nav a[aria-current='page2'], nav a[aria-current='Messages'] {
   background-color: rgb(171, 212, 95);
-  /*background-color: 
+  padding: 0.8rem; 
+}
+
+#bt_likes {
+  /*
+  */background-color: 
   linear-gradient(to right, red, yellow, green, cyan, blue, violet);*/
   padding: 0.8rem; 
+} 
+
+nav a[aria-current='page3'],
+nav a[aria-current='Saisie Msg'] {
+  background-color: rgb(197, 98, 197);
+  /*background-color: 
+  linear-gradient(to right, red, yellow, green, cyan, blue, violet);*/
+  padding: 0.6rem; 
 } 
 
 main {

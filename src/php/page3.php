@@ -4,16 +4,14 @@
     <title>Page 3</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="/src/css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
     />
-    <script type="text/javascript" src="php.js"></script>
   </head>
   <body id="body-p3">
-   
+
     <?php
     /* THESE ARE TOTALLY IGNORED... So Dev can't <ignore> PHP errors pops 
        IN MIDDLE OF HTML page !!! ( I no longer like PHP !!! :P )
@@ -23,6 +21,14 @@
     ini_set("display_errors", 0);
     ini_set("error_log", "/php/php-error.log");
     ini_set("error_reporting", E_ALL & ~E_NOTICE);
+
+    /* after going to form in /php/index.php */ 
+    /*if (isset($table_name) && ($table_name === true))*/
+    /*if (@$table_name === true) { }*/
+    $table_name = $_POST['Msg'];
+    if (isset($Msg)) {
+      echo "<p style='font-size: 2rem;'>$Msg</p>";
+    }
 
     /* include 'like.php';*/
     
@@ -50,11 +56,13 @@
 
     <nav class="navbar navbar-expand-sm navbar-light bg-warning" aria-label="Fourth navbar example(Bootstrap 2023)">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html">
+        <a class="navbar-brand" href="/src/index.html">
           <u style="text-decoration: overline underline">D</u>aniel'
           <u style="text-decoration: overline underline">S</u>
         </a>
-        <a href="/php/index.php" aria-current="php index file">php page</a>
+        <a href="/src/php/note_form.php" aria-current="Saisie Msg">
+           <u style="text-decoration: overline underline">S</u>aisie Message
+        </a>
         <button 
           class="navbar-toggler collapsed" 
           type="button"
@@ -73,10 +81,10 @@
         <div class="navbar-collapse collapse" id="navbarsExample04" style="">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/index.html">Accueil</a>
+              <a class="nav-link active" aria-current="page" href="/src/index.html">Accueil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/page2.html">ZOUZOUS</a>
+              <a class="nav-link" href="/src/page2.html">ZOUZOUS</a>
             </li>
             <!--<li class="nav-item">
               <a class="nav-link disabled">HS</a>
@@ -98,7 +106,7 @@
     </nav>
     <main>
     
-      <button type="button" href="javascript:void(0)" onclick="like()">
+      <button style="background: Tomato;" id="bt_likes" type="button" href="javascript:void(0)" onclick="like()">
         Click me ( Likes :  <span id="count"><?php echo $likeCount ?></span> )
       </button>
 
@@ -129,7 +137,9 @@
           </div>
         </div>
       </div>
-    </main> 
+    </main>
+    <script type="module" src="/src/js/script.js"></script>
+    <script type="text/javascript" src="/src/js/php.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
