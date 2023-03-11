@@ -106,7 +106,7 @@
     </nav>
     <main>
     
-      <button type="button" href="javascript:void(0)" onclick="like()">
+      <button id="bt_likes" type="button" href="javascript:void(0)" onclick="like()">
         Click me ( Likes :  <span id="count"><?php echo $likeCount ?></span> )
       </button>
 
