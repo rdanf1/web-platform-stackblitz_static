@@ -29,7 +29,7 @@ body {
   font-family: system-ui, sans-serif;
   justify-content : right;
   background-image: 
-    linear-gradient(to left, transparent, rgb(190, 153, 27) 40%),
+    linear-gradient(to left, transparent, rgb(167, 156, 27) 80%),
     url("/src/data/img_dan-3.jpg")
 }
 
