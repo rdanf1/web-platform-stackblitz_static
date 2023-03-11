@@ -1,4 +1,6 @@
+<meta http-equiv="refresh" content="2;/src/php/msgFile.html">
 
+/*
 <main>
     <nav class="navbar navbar-expand-sm navbar-light bg-warning" aria-label="Fourth navbar example(Bootstrap 2023)">
       <div class="container-fluid">
@@ -14,7 +16,7 @@
       </div>
     </nav
 </main>
-
+*/
 <?php
   /*
   if (isset($Msg)) {
@@ -34,7 +36,7 @@
         file_put_contents($msgFile, $data . "\n", FILE_APPEND);
         
         /* log */
-        echo "<p style='font-size: 3rem;'>Written : $Msg<br></p>";
+        echo "<p style='font-size: 3rem;'>Written : <br>$Msg<br></p>";
 
         fclose($file);
     } else {
@@ -45,7 +47,7 @@
         $data = "<p style='font-size: 3rem;'> $Msg<br></p>";
         file_put_contents($msgFile, $data . "\n", FILE_APPEND);
         /* log */
-        echo "<p style='font-size: 3rem;'>Written : $Msg<br></p>";
+        echo "<p style='font-size: 3rem;'>Written : <br>$Msg<br></p>";
     }
 } else {
     return 'Something Wrong!';
