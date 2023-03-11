@@ -5,8 +5,9 @@ class ListOfMessages
     // properties
     private $nbMsg = '0';
     private $owner = 'Adm';
-    private $ficName ;      // <owner>-MessageList'
-    private $name ;         // <ficname>
+    private $name ;         // <owner> . '-MessageList'  (+ Increment if one to many - TODO...)
+    private $ficName ;      // <owner> . '-MessageList' . '.txt'
+    private $htmName ;      // <owner> . '-MessageList' . '.html'
 
     // properties methods
     public function nbMsg() {
@@ -26,9 +27,17 @@ class ListOfMessages
  
         $this->owner = $Owner ;
         // Calculated properties
-        $this->ficName = $Owner . '-MessageList.txt';
-        $this->name = $this->ficName;
+        $this->name = $Owner . '-MessageList';
+        $this->ficName = $this->name . '.txt';
+        $this->htpName = $this->name . '.html';
         
+        // simplifying further notations
+        $owner = $this->owner;
+        $name = $this->name;
+        $fic = $this->ficName;
+        $htm = $this->htpName;
+        $msg = $Msg;
+
         // Implements :
         // A> Fic management - data persistence ( create / append + $Msg )
         //   1. File creation or open 'a' append mode
@@ -79,7 +88,7 @@ class ListOfMessages
     }
     
     // List (Store fic of Msg contents in Array)
-    public function list ( $Name ) {
+    public function list () {
       echo 'In List func' . '<br>';
         // Implements :
         //   3. Return an array of the fic of Msg lines (1 line = 1 Msg) 
@@ -101,6 +110,8 @@ class ListOfMessages
         //   CODE HERE
     }
     public function remove () {
+      $NameFic = $this->$name . txt
+
       echo 'removing ' . $this->$name . '<br>';
         // Implements : deletion of Fic and view (html file) of the list 
     }
