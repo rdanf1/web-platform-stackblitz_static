@@ -33,6 +33,16 @@ body {
     url("/src/data/img_dan-3.jpg")
 }
 
+#body-Msg {
+  margin: 0;
+  color: black;
+  font-family: system-ui, sans-serif;
+  
+  background-image: 
+    linear-gradient(to left, transparent, rgb(238, 203, 76) 214%),
+    url("/src/data/Msg_Paper.jpg")
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
