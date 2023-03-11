@@ -22,7 +22,7 @@ class ListOfMessages
     }
 
     // construct
-    public function __construct( var $Msg = 'Mon 1er Message' ) {
+    public function __construct( $Msg = 'Mon 1er Message' ) {
         echo 'In ListOfMessages construct' . '\n';
         echo $Msg;
         //
@@ -36,7 +36,7 @@ class ListOfMessages
         //   CODE HERE
     }    
     // Add Msg
-    public function addMsg( var $Msg = 'Mon 1er Message') {
+    public function addMsg( $Msg = 'Mon 1er Message') {
         echo 'In addMsg' . '\n';
         echo $Msg;
         // Implements :
@@ -62,7 +62,7 @@ class ListOfMessages
         //   CODE HERE
     }    
     // View function
-    public function display ( var $textListMsg[] ) {
+    public function display ( $textListMsg[] ) {
       echo 'In displayList func';
         // Implements :
         // B> Create HTML View (an HTML file) - if not already exists 
@@ -73,7 +73,7 @@ class ListOfMessages
         //   3. Add footer of List of Message Page (fixed .foot file ?)
         //   CODE HERE
     }
-    public function remove ( var $name ) {
+    public function remove ( $name ) {
       echo 'removing ' . $name
         // Implements : Fic and view deletion of the list 
     }
