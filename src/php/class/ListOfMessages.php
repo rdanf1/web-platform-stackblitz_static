@@ -3,22 +3,27 @@
 class ListOfMessages
 {
     // properties
-    private $numberOfMsg = '0';
-    private $listMsgOwner = 'Adm';
-    private $ficname = $this->listMsgOwner . "-MessageList";
+    private $nbMsg = '0';
+    private $owner = 'Adm';
+    private $ficName = $this->owner . '-MessageList';
+    private $name = $ficName;
 
     // properties methods
-    public function displayNbMsg() {
-        echo $this->numberOfMsg;
+    public function nbMsg() {
+        echo $this->nbMsg;
     }
 
-    public function displayOwner() {
-        echo $this->listMsgOwner;
+    public function owner() {
+        echo $this->owner;
+    }
+
+    public function name() {
+        echo $this->name;
     }
 
     // construct
     public function __construct( var $Msg = 'Mon 1er Message' ) {
-        echo 'In ListOfMessages construct' . '\n'
+        echo 'In ListOfMessages construct' . '\n';
         echo $Msg;
         //
         // Implements :
@@ -31,10 +36,9 @@ class ListOfMessages
         //   CODE HERE
     }    
     // Add Msg
-    public function add( var $Msg = 'Mon 1er Message') {
-        echo 'In ListOfMessages construct' . '\n'
+    public function addMsg( var $Msg = 'Mon 1er Message') {
+        echo 'In addMsg' . '\n';
         echo $Msg;
-        //
         // Implements :
         // A> Fic management - data persistence ( create / append + $Msg )
         //   1. File creation or open 'a' append mode
@@ -45,10 +49,9 @@ class ListOfMessages
         //   CODE HERE
     }  
      // Delete Msg
-    public function del( int $MsgNbr = $this->numberOfMsg ) {
-        echo 'In Delete Msg func'
-        echo $MsgNbr;
-        //
+    public function delMsg( int $MsgNbr = $this->numberOfMsg ) {
+        echo 'In delMsg func';
+        echo Number of the line of the message to be deleted $MsgNbr;
         // Implements :
         // A> Fic management - data persistence ( create / append + $Msg )
         //   1. File creation or open 'a' append mode
@@ -59,18 +62,20 @@ class ListOfMessages
         //   CODE HERE
     }    
     // View function
-    public function displayListOfMessages ( var $textListMsg[] ) {
-        //
+    public function display ( var $textListMsg[] ) {
+      echo 'In displayList func';
         // Implements :
-        // B> Create HTML View (an HTML file)
+        // B> Create HTML View (an HTML file) - if not already exists 
         //   1. Header of a List of Messages (fixed .head file ?)
         //   CODE HERE
         //   2. Encapsulate Fic line (only text) in HTML/CSS line
         //   CODE HERE
         //   3. Add footer of List of Message Page (fixed .foot file ?)
         //   CODE HERE
-        //
-       
+    }
+    public function remove ( var $name ) {
+      echo 'removing ' + 
+        // Implements : Fic and view deletion of the list 
     }
   
 }
