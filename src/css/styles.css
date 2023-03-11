@@ -62,7 +62,7 @@ nav a {
   justify-content : center;
 }
 
-nav a[aria-current='page2'] {
+nav a[aria-current='page2'], nav a[aria-current='Messages'] {
   background-color: rgb(171, 212, 95);
   padding: 0.8rem; 
 }
