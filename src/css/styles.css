@@ -70,7 +70,7 @@ nav a[aria-current='page2'] {
 } 
 
 nav a[aria-current='page3'] {
-  background-color: rgb(71, 25, 71);
+  background-color: rgb(197, 98, 197);
   /*background-color: 
   linear-gradient(to right, red, yellow, green, cyan, blue, violet);*/
   padding: 0.6rem; 
