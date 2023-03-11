@@ -40,6 +40,7 @@
     } else {
     /* if file does not exist create it for the first time with count 1 */
         file_put_contents($msgFile, "<p style='font-size: 3rem; background: MediumSeaGreen'" . " class='bg-warning'" . "> Liste des Messages <br></p>" . "\n");
+        file_put_contents($msgFile, "<a href='/src/index.html'>Retour</p>" . "\n");
         $data = "<p style='font-size: 3rem;'> $Msg<br></p>";
         file_put_contents($msgFile, $data . "\n", FILE_APPEND);
         /* log */
