@@ -69,7 +69,8 @@ nav a[aria-current='page2'] {
   padding: 0.8rem; 
 } 
 
-nav a[aria-current='page3'] {
+nav a[aria-current='page3'],
+nav a[aria-current='Saisie Msg']  {
   background-color: rgb(197, 98, 197);
   /*background-color: 
   linear-gradient(to right, red, yellow, green, cyan, blue, violet);*/
