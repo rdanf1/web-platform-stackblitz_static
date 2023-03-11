@@ -41,7 +41,7 @@ class ListOfMessages
     }    
     // Add Msg
     public function addMsg( $Msg = 'Mon 1er Message') {
-        echo 'In addMsg' . '\n';
+        echo 'In addMsg' . '<br>';
         echo $Msg;
         // Implements :
         // A> Fic management - data persistence ( create / append + $Msg )
@@ -54,8 +54,8 @@ class ListOfMessages
     }  
      // Delete Msg
     public function delMsg( $MsgNbr ) {  //  = $this->nbMsg
-        echo 'In delMsg func';
-        echo 'Number of the line of the message to be deleted' . $MsgNbr;
+        echo 'In delMsg func' . '<br>';
+        echo 'Number of the line of the message to be deleted' . $MsgNbr . '<br>';
         // Implements :
         // A> Fic management - data persistence ( create / append + $Msg )
         //   1. File creation or open 'a' append mode
@@ -67,7 +67,7 @@ class ListOfMessages
     }    
     // View function
     public function display ( $textListMsg ) {
-      echo 'In displayList func';
+      echo 'In displayList func' . '<br>';
         // Implements :
         // B> Create HTML View (an HTML file) - if not already exists 
         //   1. Header of a List of Messages (fixed .head file ?)
@@ -78,7 +78,7 @@ class ListOfMessages
         //   CODE HERE
     }
     public function remove ( $name ) {
-      echo 'removing ' . $name;
+      echo 'removing ' . $name . '<br>';
         // Implements : Fic and view deletion of the list 
     }
   
