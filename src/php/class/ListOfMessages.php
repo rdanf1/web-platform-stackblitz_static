@@ -5,8 +5,8 @@ class ListOfMessages
     // properties
     private $nbMsg = '0';
     private $owner = 'Adm';
-    private $ficName = '-MessageList'; // $this->owner; // . 
-    private $name = $ficName;
+    private $ficName ;
+    private $name ; 
 
     // properties methods
     public function nbMsg() {
@@ -23,6 +23,10 @@ class ListOfMessages
 
     // construct
     public function __construct( $Msg = 'Mon 1er Message' ) {
+        // Calculated properties
+        $this.ficName = $this->owner . '-MessageList';
+        $this.name = $this->ficname;
+        
         echo 'In ListOfMessages construct' . '\n';
         echo $Msg;
         //
