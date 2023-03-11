@@ -35,15 +35,20 @@ class ListOfMessages
         $fic = $this->ficName;
 
         if(file_exists($fic)) {
+
         /* read only the first line of the file as we don't intend to have more */
           $file = fopen($fic, 'a');
           $data = "$Msg\n";
           file_put_contents($fic, $data . "\n", FILE_APPEND);
           fclose($file);
+
         } else {
-        /* if file does not exist create it for the first time with count 1 */
-          file_put_contents($fic, "$Msg\n");
-        
+        /* if file does not exist create it */
+          file_put_contents($fic, "$Msg\n");        
+
+        } else {
+          return 'Something Wrong!';
+}
         
     }    
     // Add Msg
@@ -72,16 +77,19 @@ class ListOfMessages
         //   3. Return an array of the file lines (1 line = 1 Msg)
         //   CODE HERE
     }
-    // List function
+    
+    // List (Store fic of Msg contents in Array)
     public function list ( $Name ) {
       echo 'In List func' . '<br>';
         // Implements :
-        //   3. Return an array of the file lines (1 line = 1 Msg) 
+        //   3. Return an array of the fic of Msg lines (1 line = 1 Msg) 
         //   CODE HERE
+
+      return ArrayOfMsg;
     }
 
     // View function
-    public function display ( $Name ) {
+    public function display () {
       echo 'In displayList func' . '<br>';
         // Implements :
         // B> Create HTML View (an HTML file) - if not already exists 
@@ -92,9 +100,9 @@ class ListOfMessages
         //   3. Add footer of List of Message Page (fixed .foot file ?)
         //   CODE HERE
     }
-    public function remove ( $Name ) {
-      echo 'removing ' . $name . '<br>';
-        // Implements : Fic and view deletion of the list 
+    public function remove () {
+      echo 'removing ' . $this->$name . '<br>';
+        // Implements : deletion of Fic and view (html file) of the list 
     }
   
 }

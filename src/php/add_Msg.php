@@ -15,8 +15,11 @@
     
     $Msg = $_POST['Msg'];
    
-    // We're finished here ! 
+    // We're almost finished here ! 
     $MsgList = new ListOfMessages ($Msg, $owner);
+
+    // This is it :
+    $MsgList->Display ()
 
   } else {
     return 'Something Wrong!';
