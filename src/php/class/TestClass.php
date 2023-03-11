@@ -1,10 +1,10 @@
 <?php
 
 function myEcho($param) {
-    echo $param."\n";
+    echo $param . "<br";
 }
 
-myEcho("Sammy", "Bonjour");
+myEcho("Sammy");
 
 include 'ListOfMessages.php';
 
