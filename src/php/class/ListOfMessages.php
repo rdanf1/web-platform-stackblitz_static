@@ -74,7 +74,7 @@ class ListOfMessages
         //   CODE HERE
     }
     public function remove ( var $name ) {
-      echo 'removing ' + 
+      echo 'removing ' . $name
         // Implements : Fic and view deletion of the list 
     }
   
