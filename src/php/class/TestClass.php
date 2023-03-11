@@ -1,7 +1,7 @@
 <?php
 
 function Echo($txt) {
-  echo $txt .  '<br>'
+  echo  $txt .  '<br>'
 }
 
 include 'ListOfMessages.php';
