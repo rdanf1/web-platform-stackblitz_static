@@ -54,12 +54,10 @@ class ListOfMessages
         } else {
         /* if file does not exist create it */
           file_put_contents($fic, "$Msg\n");        
-
-        } else {
-          return 'Something Wrong!';
-}
+        }
         
-    }    
+    }
+
     // Add Msg
     public function addMsg( $Msg = 'Mon 1er Message') {
         echo 'In addMsg' . '<br>';
