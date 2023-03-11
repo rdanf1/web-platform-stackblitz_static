@@ -62,7 +62,7 @@ class ListOfMessages
         //   CODE HERE
     }    
     // View function
-    public function display ( $textListMsg[] ) {
+    public function display ( $textListMsg ) {
       echo 'In displayList func';
         // Implements :
         // B> Create HTML View (an HTML file) - if not already exists 
