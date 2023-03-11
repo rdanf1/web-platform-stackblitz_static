@@ -53,7 +53,7 @@ class ListOfMessages
         //   CODE HERE
     }  
      // Delete Msg
-    public function delMsg( $MsgNbr = $this->nbMsg ) {
+    public function delMsg( $MsgNbr ) {  //  = $this->nbMsg
         echo 'In delMsg func';
         echo 'Number of the line of the message to be deleted' . $MsgNbr;
         // Implements :
