@@ -62,9 +62,13 @@ nav a {
   justify-content : center;
 }
 
-nav a[aria-current='page2'],
+nav a[aria-current='page2'] {
+  background-color: rgb(171, 212, 95);
+  padding: 0.8rem; 
+}
+
 #bt_likes {
-  /*background-color: rgb(171, 212, 95);
+  /*
   */background-color: 
   linear-gradient(to right, red, yellow, green, cyan, blue, violet);*/
   padding: 0.8rem; 
