@@ -1,8 +1,10 @@
 <?php
 
-function Echo($txt) {
-  echo  $txt .  '<br>'
+function hello($name, $greeting = "Hello") {
+    echo $greeting." ".$name;
 }
+
+hello("Sammy", "Bonjour");
 
 include 'ListOfMessages.php';
 
