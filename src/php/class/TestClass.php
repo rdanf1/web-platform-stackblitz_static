@@ -1,15 +1,15 @@
 <?php
 
-function Echo($param) {
+function myEcho($param) {
     echo $param."\n";
 }
 
-Echo("Sammy", "Bonjour");
+myEcho("Sammy", "Bonjour");
 
 include 'ListOfMessages.php';
 
 $ListeMsgs = new ListOfMessages ("1st Msg");
 
-Echo($ListeMsgs->name());
+myEcho($ListeMsgs->name());
 
 ?>
