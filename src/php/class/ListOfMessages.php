@@ -28,7 +28,7 @@ class ListOfMessages
         $this->name = $this->ficName;
         
         echo 'In ListOfMessages construct' . '<br>';
-        echo $Msg;
+        echo $Msg . '<br>';
         //
         // Implements :
         // A> Fic management - data persistence ( create / append + $Msg )
