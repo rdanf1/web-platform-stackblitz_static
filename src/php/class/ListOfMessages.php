@@ -25,7 +25,7 @@ class ListOfMessages
     public function __construct( $Msg = 'Mon 1er Message' ) {
         // Calculated properties
         $this->ficName = $this->owner . '-MessageList';
-        $this->name = $this->ficname;
+        $this->name = $this->ficName;
         
         echo 'In ListOfMessages construct' . '\n';
         echo $Msg;
