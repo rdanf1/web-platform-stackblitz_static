@@ -5,7 +5,7 @@ class ListOfMessages
     // properties
     private $nbMsg = '0';
     private $owner = 'Adm';
-    private $ficName = $this->owner; // . '-MessageList';
+    private $ficName = '-MessageList'; // $this->owner; // . 
     private $name = $ficName;
 
     // properties methods
