@@ -41,7 +41,7 @@
     /* if file does not exist create it for the first time with count 1 */
         file_put_contents($msgFile, "<p style='font-size: 3rem; background: MediumSeaGreen'" . " class='bg-warning'" . "> Liste des Messages <br></p>" . "\n");
         file_put_contents($msgFile, "<a href='/src/index.html'>Retour</p>" . "\n", FILE_APPEND);
-        $data = "<p style='font-size: 3rem;'> $Msg<br></p>";
+        $data = "<p style='font-size: 3rem;'> $Msg<br></a>";
         file_put_contents($msgFile, $data . "\n", FILE_APPEND);
         /* log */
         echo "<p style='font-size: 3rem;'>Written : $Msg<br></p>";
