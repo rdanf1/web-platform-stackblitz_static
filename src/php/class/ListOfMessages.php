@@ -42,7 +42,7 @@ class ListOfMessages
     // Add Msg
     public function addMsg( $Msg = 'Mon 1er Message') {
         echo 'In addMsg' . '<br>';
-        echo $Msg;
+        echo $Msg . '<br>';
         // Implements :
         // A> Fic management - data persistence ( create / append + $Msg )
         //   1. File creation or open 'a' append mode
