@@ -14,7 +14,7 @@
       </div>
     </nav
 </main>
-
+<script type="module" src="/src/js/include_fct.js"></script>
 
 <?php
   /*
