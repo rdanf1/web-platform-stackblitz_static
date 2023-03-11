@@ -64,8 +64,8 @@ nav a {
 
 nav a[aria-current='page2'],
 #bt_likes {
-  background-color: rgb(171, 212, 95);
-  /*background-color: 
+  /*background-color: rgb(171, 212, 95);
+  */background-color: 
   linear-gradient(to right, red, yellow, green, cyan, blue, violet);*/
   padding: 0.8rem; 
 } 
