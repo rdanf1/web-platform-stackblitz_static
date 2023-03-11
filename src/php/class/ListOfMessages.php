@@ -2,14 +2,14 @@
 
 class ListOfMessages
 {
-    // properties
-    private $nbMsg = '0';
-    private $owner = 'Adm';
+    // properties:
+    private $nbMsg ;        // No Empty List created (but when all messages are deleted...)
+    private $owner = 'Adm'; // Actually s a beginning : 1 single list callled Adm-MessageList
     private $name ;         // <owner> . '-MessageList'  (+ Increment if one to many - TODO...)
     private $ficName ;      // <owner> . '-MessageList' . '.txt'
     private $htmName ;      // <owner> . '-MessageList' . '.html'
 
-    // properties methods
+    // exposing properties methods
     public function nbMsg() {
         echo $this->nbMsg;
     }
