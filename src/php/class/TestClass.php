@@ -10,6 +10,6 @@ include 'ListOfMessages.php';
 
 $ListeMsgs = new ListOfMessages ("1st Msg");
 
-myEcho $ListeMsgs->name();
+myEcho($ListeMsgs->name());
 
 ?>
