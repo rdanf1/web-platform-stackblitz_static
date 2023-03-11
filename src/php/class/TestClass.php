@@ -1,7 +1,7 @@
 <?php
 
 function myEcho($param) {
-    echo $param . "<br";
+    echo $param . "<br>";
 }
 
 myEcho("Sammy");
