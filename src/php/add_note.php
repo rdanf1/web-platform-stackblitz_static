@@ -36,7 +36,7 @@
         file_put_contents($msgFile, $data . "\n", FILE_APPEND);
         
         /* log */
-        echo "<p style='font-size: 3rem;'>Message ajouté : <br>$Msg<br></p>";
+        echo "<p style='font-size: 3rem;'>Message ajouté : <br><br>$Msg</p>";
 
         fclose($file);
     } else {
@@ -47,7 +47,7 @@
         $data = "<p style='font-size: 3rem;'> $Msg<br></p>";
         file_put_contents($msgFile, $data . "\n", FILE_APPEND);
         /* log */
-        echo "<p style='font-size: 3rem;'>Message ajouté : <br>$Msg<br></p>";
+        echo "<p style='font-size: 3rem;'>Message ajouté : <br><br>$Msg</p>";
     }
 } else {
     return 'Something Wrong!';
