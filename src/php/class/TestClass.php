@@ -12,4 +12,8 @@ $ListeMsgs = new ListOfMessages ("1st Msg");
 
 myEcho($ListeMsgs->name());
 
+myEcho($ListeMsgs->owner());
+
+myEcho($ListeMsgs->nbMsg());
+
 ?>
