@@ -16,4 +16,12 @@ myEcho($ListeMsgs->owner());
 
 myEcho($ListeMsgs->nbMsg());
 
+$ListeMsgs->addMsg("Msg to add");
+
+$ListeMsgs->delMsg("Msg to del");
+
+$ListeMsgs->display("List-toDisplay");
+
+$ListeMsgs->remove("List-toRemove");
+
 ?>
