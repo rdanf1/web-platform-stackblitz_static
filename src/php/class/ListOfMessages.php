@@ -31,13 +31,9 @@ class ListOfMessages
         $this->ficName = $this->name . '.txt';
         $this->htpName = $this->name . '.html';
         
-        // simplifying further notations
-        $owner = $this->owner;
-        $name = $this->name;
+        // what we use
         $fic = $this->ficName;
-        $htm = $this->htpName;
-        $msg = $Msg;
-
+ 
         // Implements :
         // A> Fic management - data persistence ( create / append + $Msg )
         //   1. File creation or open 'a' append mode
@@ -60,6 +56,10 @@ class ListOfMessages
 
     // Add Msg
     public function addMsg( $Msg = 'Mon 1er Message') {
+        
+        // what we use
+        $fic = $this->ficName;
+
         echo 'In addMsg' . '<br>';
         echo $Msg . '<br>';
         // Implements :
@@ -71,8 +71,13 @@ class ListOfMessages
         //   3. Return an array of the file lines (1 line = 1 Msg)
         //   CODE HERE
     }  
+
      // Delete Msg
     public function delMsg( $MsgNbr ) {  //  = $this->nbMsg
+        
+        // what we use
+        $fic = $this->ficName;
+
         echo 'In delMsg func' . '<br>';
         echo 'Number of the line of the message to be deleted : ' . $MsgNbr . '<br>';
         // Implements :
@@ -87,7 +92,11 @@ class ListOfMessages
     
     // List (Store fic of Msg contents in Array)
     public function list () {
-      echo 'In List func' . '<br>';
+       
+        // what we use
+        $fic = $this->ficName;
+
+        echo 'In List func' . '<br>';
         // Implements :
         //   3. Return an array of the fic of Msg lines (1 line = 1 Msg) 
         //   CODE HERE
@@ -97,7 +106,11 @@ class ListOfMessages
 
     // View function
     public function display () {
-      echo 'In displayList func' . '<br>';
+
+        // what we use
+        $htm = $this->htpName;
+
+        echo 'In displayList func' . '<br>';
         // Implements :
         // B> Create HTML View (an HTML file) - if not already exists 
         //   1. Header of a List of Messages (fixed .head file ?)
@@ -108,7 +121,7 @@ class ListOfMessages
         //   CODE HERE
     }
     public function remove () {
-      $NameFic = $this->$name . txt
+      $NameFic = $this->$name . txt;
 
       echo 'removing ' . $this->$name . '<br>';
         // Implements : deletion of Fic and view (html file) of the list 
