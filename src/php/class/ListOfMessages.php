@@ -27,7 +27,7 @@ class ListOfMessages
         $this->ficName = $this->owner . '-MessageList';
         $this->name = $this->ficName;
         
-        echo 'In ListOfMessages construct' . .PHP_EOF;
+        echo 'In ListOfMessages construct';
         echo $Msg;
         //
         // Implements :
