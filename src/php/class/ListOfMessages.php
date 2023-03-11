@@ -51,7 +51,7 @@ class ListOfMessages
      // Delete Msg
     public function delMsg( int $MsgNbr = $this->numberOfMsg ) {
         echo 'In delMsg func';
-        echo Number of the line of the message to be deleted $MsgNbr;
+        echo 'Number of the line of the message to be deleted' . $MsgNbr;
         // Implements :
         // A> Fic management - data persistence ( create / append + $Msg )
         //   1. File creation or open 'a' append mode
@@ -74,7 +74,7 @@ class ListOfMessages
         //   CODE HERE
     }
     public function remove ( $name ) {
-      echo 'removing ' . $name
+      echo 'removing ' . $name;
         // Implements : Fic and view deletion of the list 
     }
   
