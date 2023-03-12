@@ -105,7 +105,7 @@ class ListOfMessages
 
      // Only Owner of the List can delete Msg (TODO : User Mgmnt & Policy)
      // Delete Msg numbers given as parameters
-    public function delMsg(string $Owner, ...$MsgNbr) {
+    public function delMsg(string $Owner, $MsgNbr) {
 
         // Local
         $no_msg = 0;    
