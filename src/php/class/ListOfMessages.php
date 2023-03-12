@@ -133,11 +133,13 @@ class ListOfMessages
                     $i++;
                 } else {
                     echo 'IN MSG TO DEL' . '<br>';
-
                 }
 
             }
             // Write array of messages in temporary file
+            echo 'ARRAY OF MESSAGES VAR_DUMP' . '<br>';
+            var_dump($arrayOfMsg);
+
             foreach($arrayOfMsg as $line) {
                 file_put_contents("$fic_tmp", $line, FILE_APPEND);
             }
