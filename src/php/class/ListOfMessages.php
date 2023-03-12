@@ -34,6 +34,7 @@ class ListOfMessages
         
         // what we use
         $fic = $this->ficName;
+        $nb = $this->nbMsg
  
         // Implements :
         // A> Fic management - data persistence ( create / append + $Msg )
@@ -46,12 +47,14 @@ class ListOfMessages
           $data = "$Msg\n";
           file_put_contents($fic, $data . "\n", FILE_APPEND);
           fclose($file);
-
+          
+          $nb = $nb + 1;
         } else {
         /* if file does not exist create it */
           file_put_contents($fic, "$Msg\n");        
         }
-        
+        // Keep it
+        $this->nbMsg = $nb;
     }
 
     // Add Msg (not NULL)
