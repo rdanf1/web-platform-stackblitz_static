@@ -72,6 +72,34 @@ class ListOfMessages
         
     }  
 
+    // Number of Messages ( Each line in fic is a message )
+    public function nbMsg ( $Owner = 'Anon' ) {
+    
+        // Local
+        $nb_msg = 0;    
+        $arrayOfMsg = [];
+
+        // what we use
+        $name = $Owner . '-MessageList';
+        $fic = $name . '.txt';
+        
+        echo 'In nbMsg func' . '<br>';
+
+        if(file_exists($fic)) {
+
+            foreach(file("$fic") as $line) {  
+
+                $nb_msg++;
+            }
+        } else {
+
+            echo 'NOTICE : This user has no Message List' . '<br>';
+            $nb_msg = -1;
+        }
+
+      return $nb_msg;
+    }
+
      // Delete Msg
      // If $MsgNbr is NULL (no parameter given) erase all messages
     public function delMsg( $MsgNbr = NULL ) {  //  = $this->nbMsg
@@ -91,35 +119,6 @@ class ListOfMessages
         //   CODE HERE
     }
 
-    // Number of Messages ( Each line in fic is a message )
-    public function nbMsg ( $Owner = 'Anon' ) {
-        
-        // Local
-        $nb_msg = 0;
-
-        $name = $Owner . '-MessageList';
-        $arrayOfMsg = [];
-
-        // what we use
-        $fic = $name . '.txt';
-        
-        echo 'In List func' . '<br>';
-
-        if(file_exists($fic)) {
-
-            foreach(file("$fic") as $line) {  
-
-                $nb_msg++;
-            }
-        } else {
-
-            echo 'NOTICE : This user has no Message List' . '<br>';
-            $nb_msg = -1;
-        }
-
-      return $nb_msg;
-    }
-    
     // List (Store fic of Msg contents in Array)
     public function listMsgs ( $Owner = 'Anon' ) {
         
