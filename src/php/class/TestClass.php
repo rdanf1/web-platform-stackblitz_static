@@ -35,7 +35,7 @@ for ($i = 1; $i <= 20; $i++) {
     array_push($linesToDelete, $i);
 }
 myEcho("deleting Messages " . array_slice($linesToDelete, 0));
-call_user_func("$ListeMsgs::delMsg", $ListeMsgs->Owner(), $linesToDelete);
+call_user_func($ListeMsgs::delMsg, $ListeMsgs->Owner(), $linesToDelete);
 //$ListeMsgs->delMsg($ListeMsgs->Owner(), array_slice($linesToDelete, 0));
 myEcho("deleted Messages N° : 3, 6, 9, 24");
 
