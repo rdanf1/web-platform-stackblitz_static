@@ -24,7 +24,7 @@ $ListeMsgs->addMsg("3rd Msg added");
 
 myEcho($ListeMsgs->nbMsg());
 
-$ListeMsgs->listMsgs();
+$list = $ListeMsgs->listMsgs()
 
 $ListeMsgs->delMsg(3);
 
@@ -32,6 +32,6 @@ $ListeMsgs->display("List-toDisplay");
 
 $ListeMsgs->remove("List-toRemove");
 
-
+vardump($list);
 
 ?>
