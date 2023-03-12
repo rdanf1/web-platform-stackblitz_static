@@ -125,9 +125,7 @@ class ListOfMessages
             foreach(file("$fic") as $line) {  
 
                 $no_msg++;
-                if (in_array($no_msg, $MsgNbr) {
-                    ;
-                } else {                   
+                if (! in_array($no_msg, $MsgNbr) {                                  
                     $arrayOfMsg[$i] = $line;
                     $i++;
                 }
@@ -136,7 +134,7 @@ class ListOfMessages
             foreach($arrayOfMsg as $line) {
                 file_put_contents("$fic_tmp", $line, FILE_APPEND);
             }
-            // Apply modofications
+            // Apply modifications
             rename("$fic_tmp","fic");
           
         } else {
