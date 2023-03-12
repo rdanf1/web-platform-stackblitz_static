@@ -30,9 +30,11 @@ myEcho($nb_msg);
 $list = $ListeMsgs->listMsgs();
 var_dump($list);
 
-
+for ($i = 1; $i <= 20; $i++) {
+    array_push($linesToDelete, $i);
+}
 myEcho("deleting Messages N° : 3, 6, 9, 24");
-$ListeMsgs->delMsg($ListeMsgs->Owner(), 3, 6, 9, 24);  // $ListeMsgs->Owner(),
+$ListeMsgs->delMsg($ListeMsgs->Owner(), $linesToDelete, 23, 6, 9, 24);
 myEcho("deleted Messages N° : 3, 6, 9, 24");
 
 $list_after_del = $ListeMsgs->listMsgs();
