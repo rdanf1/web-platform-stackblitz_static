@@ -2,6 +2,7 @@
 <meta http-equiv="refresh" content="2;/src/php/msgFile.html">
 
 <?php
+
   //
   // Same as add_note using ListOfMessages Class
   //
