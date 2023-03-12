@@ -104,12 +104,16 @@ class ListOfMessages
       return $nb_msg;
     }
 
-     // Delete Msg
-     // If $MsgNbr is NULL (no parameter given) erase all messages
-    public function delMsg( $MsgNbr = NULL ) {  //  = $this->nbMsg
+     // Delete Msg numbers given as parameters
+    public function delMsg( $Owner = 'Anon', int ...$MsgNbr) {
         
         // what we use
         $fic = $this->ficName;
+
+        $nb = 0;
+        foreach ($MsgNbr as $n) {
+            
+        }
 
         echo 'In delMsg func' . '<br>';
         echo 'Number of the line of the message list to be deleted : ' . $MsgNbr . '<br>';
@@ -169,7 +173,10 @@ class ListOfMessages
         //   CODE HERE
         //   3. Add footer of List of Message Page (fixed .foot file ?)
         //   CODE HERE
+ 
     }
+
+    // Remove all Messages
     public function remove () {
         // what we use
         $fic = $this->ficName;
