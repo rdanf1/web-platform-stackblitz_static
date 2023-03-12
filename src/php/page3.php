@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Page 3</title>
+    <title>Page Tests</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/css/styles.css" />
@@ -19,7 +19,7 @@
     error_reporting(E_ALL & ~E_NOTICE); /* should avoid notices */
     ini_set("log_errors", 1);
     ini_set("display_errors", 0);
-    ini_set("error_log", "/php/php-error.log");
+    ini_set("error_log", "/src/php/php-error.log");
     ini_set("error_reporting", E_ALL & ~E_NOTICE);
 
     /* after going to form in /php/index.php */ 
@@ -93,7 +93,7 @@
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Autres</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Une Action du sous-menu</a></li>
-                <li><a class="dropdown-item" href="#">Action 2</a></li>
+                <li><a class="dropdown-item" href="/src/php/class/TestClass.php">Action 2</a></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
