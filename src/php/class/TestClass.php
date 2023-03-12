@@ -8,7 +8,7 @@ myEcho("Sammy");
 
 include 'ListOfMessages.php';
 
-$ListeMsgs = new ListOfMessages ("1st Msg");
+$ListeMsgs = new ListOfMessages ();
 
 myEcho($ListeMsgs->name());
 
