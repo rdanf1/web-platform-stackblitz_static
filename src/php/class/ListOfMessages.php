@@ -10,15 +10,15 @@ class ListOfMessages
     private $ficName = 'Anon-MessageList.txt';  // <owner> . '-MessageList' . '.txt'
     private $htmName = 'Anon-MessageList.html'; // <owner> . '-MessageList' . '.html'
     
-    // For further implementations ( ONE user TO MANY msg lists )
-    // Assume list exists (was constructed)
+    // expose private attributes ( nb_messages below ... )
+    public function Owner() {
+        
+        return $this->owner;
+    }
+
     public function Name( $Owner = 'Anon' ) {
 
-        // what we use
-        $name = "$Owner" . '-MessageList';
-        $fic = "$name"  . '.txt';
-
-        return $name;
+        return $this->name;
     }
 
     // construct
