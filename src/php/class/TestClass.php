@@ -32,7 +32,7 @@ var_dump($list);
 
 
 myEcho("deleting Messages N° : 3, 6, 9, 24");
-$ListeMsgs->delMsg(3, 6, 9, 24);  // $ListeMsgs->owner(),
+$ListeMsgs->delMsg($ListeMsgs->Owner(), 3, 6, 9, 24);  // $ListeMsgs->Owner(),
 myEcho("deleted Messages N° : 3, 6, 9, 24");
 
 $list_after_del = $ListeMsgs->listMsgs();
