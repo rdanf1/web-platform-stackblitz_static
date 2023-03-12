@@ -80,7 +80,7 @@ class ListOfMessages
         $fic = $this->ficName;
 
         echo 'In delMsg func' . '<br>';
-        echo 'Number of the line of the message to be deleted : ' . $MsgNbr . '<br>';
+        echo 'Number of the line of the message list to be deleted : ' . $MsgNbr . '<br>';
         // Implements :
         // A> Fic management - data persistence ( create / append + $Msg )
         //   1. File creation or open 'a' append mode
