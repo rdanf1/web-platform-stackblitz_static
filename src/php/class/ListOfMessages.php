@@ -125,11 +125,12 @@ class ListOfMessages
             foreach(file("$fic") as $line) {  
 
                 $no_msg++;
-                if (! in_array($no_msg, $MsgNbr) {                                  
+                if (! in_array($no_msg, $MsgNbr) {      
+                                                
                     $arrayOfMsg[$i] = $line;
                     $i++;
                 }
-                
+
             }
             // Write array of messages in temporary file
             foreach($arrayOfMsg as $line) {
