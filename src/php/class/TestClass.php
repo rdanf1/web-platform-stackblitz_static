@@ -36,7 +36,7 @@ $ListeMsgs->delMsg($ListeMsgs->Owner(), 3, 6, 9, 24);  // $ListeMsgs->Owner(),
 myEcho("deleted Messages N° : 3, 6, 9, 24");
 
 $list_after_del = $ListeMsgs->listMsgs();
-var_dump($list);
+var_dump($list_after_del);
 
 $ListeMsgs->display("List-toDisplay");
 
