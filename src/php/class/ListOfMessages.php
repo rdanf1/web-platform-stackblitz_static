@@ -43,19 +43,20 @@ class ListOfMessages
         // A> Fic management - data persistence ( create / append + $Msg )
         //   1. File creation or open 'a' append mode
 
+        $data = "$Msg\n";
+
         if(file_exists($fic)) {
 
         /* read only the first line of the file as we don't intend to have more */
           $file = fopen($fic, 'a');
-          $data = "$Msg\n";
-          file_put_contents($fic, $data . "\n", FILE_APPEND);
+          file_put_contents($fic, $data, FILE_APPEND);
           fclose($file);
           
           $nb = $nb + '1';
           echo 'In Consruct : $nb value is ' . $nb . '<br>';
         } else {
         /* if file does not exist create it */
-          file_put_contents($fic, "$Msg\n");     
+          file_put_contents($fic, $data);     
           
           $nb = $nb + '1';   
         }
