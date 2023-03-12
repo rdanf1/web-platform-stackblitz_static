@@ -51,7 +51,8 @@ class ListOfMessages
           file_put_contents($fic, $data . "\n", FILE_APPEND);
           fclose($file);
           
-          $nb = $nb + 1;
+          $nb = $nb + '1';
+          echo 'In Consruct : $nb value is ' . $nb . '<br>';
         } else {
         /* if file does not exist create it */
           file_put_contents($fic, "$Msg\n");        
