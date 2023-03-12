@@ -32,7 +32,7 @@ class ListOfMessages
         
         // what we use
         $fic = $this->ficName;
-        $nb = $this->nbMsg;
+        $nb = $this->nb_msg;
  
         echo 'In Consruct' . '<br>';
         echo $Msg . '<br>';
@@ -59,7 +59,7 @@ class ListOfMessages
           $nb = $nb + '1';   
         }
         // Keep it
-        $this->nbMsg = $nb;
+        $this->nb_msg = $nb;
     }
 
     // Add Msg (not NULL)
