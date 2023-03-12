@@ -67,7 +67,7 @@ class ListOfMessages
         echo 'In addMsg' . '<br>';
         echo $Msg . '<br>';
 
-        $this.__construct( $Msg, $Owner );
+        $this->__construct( $Msg, $Owner );
         
     }  
 
