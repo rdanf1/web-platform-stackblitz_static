@@ -119,7 +119,7 @@ class ListOfMessages
 
         echo 'In delMsg func' . '<br>';
         echo '$fic value : ' . "$fic" . '<br>';
-        var_dump($arrayOfMsg);
+        var_dump($MsgNbr);
 
         if(file_exists($fic)) {
             // Create array of messages from list
@@ -132,7 +132,8 @@ class ListOfMessages
                     array_push($arrayOfMsg, $line);
                     $i++;
                 } else {
-                    echo 'NOT IN MSG TO DEL' . '<br>';
+                    echo 'IN MSG TO DEL' . '<br>';
+
                 }
 
             }
