@@ -144,7 +144,7 @@ class ListOfMessages
                 file_put_contents("$fic_tmp", $line, FILE_APPEND);
             }
             // Apply modifications
-            rename("$fic_tmp","fic");
+            rename("$fic_tmp","$fic");
           
         } else {
 
