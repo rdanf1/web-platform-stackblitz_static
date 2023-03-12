@@ -18,6 +18,8 @@ myEcho($ListeMsgs->nbMsg());
 
 $ListeMsgs->addMsg("Msg to add");
 
+myEcho($ListeMsgs->nbMsg());
+
 $ListeMsgs->delMsg(3);
 
 $ListeMsgs->display("List-toDisplay");
