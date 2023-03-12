@@ -24,7 +24,7 @@ $ListeMsgs->addMsg("3rd Msg added");
 
 myEcho($ListeMsgs->nbMsg());
 
-$list = $ListeMsgs->listMsgs()
+$list = $ListeMsgs->listMsgs();
 
 $ListeMsgs->delMsg(3);
 
