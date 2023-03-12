@@ -32,6 +32,6 @@ $ListeMsgs->display("List-toDisplay");
 
 $ListeMsgs->remove("List-toRemove");
 
-vardump($list);
+var_dump($list);
 
 ?>
