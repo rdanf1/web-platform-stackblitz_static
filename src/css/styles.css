@@ -10,7 +10,7 @@ body {
 
   background-image: 
     linear-gradient(to left, transparent, rgb(44, 8, 83) 100%),
-    url("img_dan-3.jpg")
+    url("img_dan-3.webp")
 }
 
 #body-p2 {
@@ -20,7 +20,7 @@ body {
   
   background-image: 
     linear-gradient(to left, transparent, rgb(238, 203, 76) 114%),
-    url("img_dan-3.jpg")
+    url("img_dan-3.webp")
 }
 
 #body-p3, #nav-p3 {
