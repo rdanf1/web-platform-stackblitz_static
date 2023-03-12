@@ -38,7 +38,6 @@ class ListOfMessages
         // Implements :
         // A> Fic management - data persistence ( create / append + $Msg )
         //   1. File creation or open 'a' append mode
-        $fic = $this->ficName;
 
         if(file_exists($fic)) {
 
