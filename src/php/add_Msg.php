@@ -8,18 +8,18 @@
 
   // Only 1 Owner => 1 Msg List - "Adm-ListOfMsg"
   //    (User Accounts / Login => TODO Later)
-  $owner = 'Adm';   // that's already defined : default owner in constructor 
+  $owner = 'Anon';   // that's already defined : default owner in constructor 
                     
   if(isset($_POST['Msg']) && $_POST['Msg'] == true) {
-    // The Message was validated in "note_form.php" 
+    // The Message was validated by user in "note_form.php" 
     
     $Msg = $_POST['Msg'];
    
     // We're almost finished here ! 
     $MsgList = new ListOfMessages ($Msg, $owner);
 
-    // This is it :
-    $MsgList->Display ()
+    // This is it : View of the created or updated list of Msg is available. 
+    $MsgList->Display()
 
   } else {
     return 'Something Wrong!';
