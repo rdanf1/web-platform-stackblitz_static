@@ -4,7 +4,7 @@ class ListOfMessages
 {
     // properties:          // NB: Later with user management empty msg list created with account
                             // NB2 : The anonymous msg list can't be deleted ( modifications by admin )
-    private $nbMsg = 0;     // No Empty List created (but when all messages are deleted...)
+    private $nb_msg = 0;    // No Empty List created (but when all messages are deleted...)
     private $owner = 'Anon';// Actually as a beginning : 1 single list callled Anon-MessageList
     private $name ;         // <owner> . '-MessageList'  (+ Increment if one to many - TODO...)
     private $ficName ;      // <owner> . '-MessageList' . '.txt'
