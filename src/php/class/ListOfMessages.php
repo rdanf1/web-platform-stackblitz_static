@@ -118,6 +118,7 @@ class ListOfMessages
         $fic_tmp = "$name" . '.txt.tmp';
 
         echo 'In delMsg func' . '<br>';
+        echo '$fic value : ' . $fic;
 
         if(file_exists($fic)) {
             // Create array of messages from list
