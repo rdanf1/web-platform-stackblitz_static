@@ -97,7 +97,7 @@ class ListOfMessages
     public function nbMsg ( $Owner = 'Anon' ) {
         
         // Local
-        $nbMsg = 0;
+        $nb_msg = 0;
 
         $name = $Owner . '-MessageList';
         $arrayOfMsg = [];
@@ -111,15 +111,15 @@ class ListOfMessages
 
             foreach(file("$fic") as $line) {  
 
-                $nbMsg++;
+                $nb_msg++;
             }
         } else {
 
             echo 'NOTICE : This user has no Message List' . '<br>';
-            $nbMsg = -1;
+            $nb_msg = -1;
         }
 
-      return $nbMsg;
+      return $nb_msg;
     }
     
     // List (Store fic of Msg contents in Array)
