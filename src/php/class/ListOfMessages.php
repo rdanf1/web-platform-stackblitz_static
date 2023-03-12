@@ -80,8 +80,7 @@ class ListOfMessages
     public function nbMsg ( $Owner = 'Anon' ) {
     
         // Local
-        $nb_msg = 0;    
-        $arrayOfMsg = [];
+        $nb_msg = 0;
 
         // what we use
         $name = $Owner . '-MessageList';
@@ -104,27 +103,45 @@ class ListOfMessages
       return $nb_msg;
     }
 
+     // Only Owner of the List can delete Msg (TODO : User Mgmnt & Policy)
      // Delete Msg numbers given as parameters
     public function delMsg( $Owner = 'Anon', int ...$MsgNbr) {
+
+        // Local
+        $no_msg = 0;    
+        $arrayOfMsg = [];
+        $i = 0;
         
         // what we use
-        $fic = $this->ficName;
-
-        $nb = 0;
-        foreach ($MsgNbr as $n) {
-            
-        }
+        $name = $Owner . '-MessageList';
+        $fic = $name . '.txt';
+        $fic_tmp = $name . '.txt.tmp';
 
         echo 'In delMsg func' . '<br>';
-        echo 'Number of the line of the message list to be deleted : ' . $MsgNbr . '<br>';
-        // Implements :
-        // A> Fic management - data persistence ( create / append + $Msg )
-        //   1. File creation or open 'a' append mode
-        //   CODE HERE
-        //   2. $Msg added in file $ficname
-        //   CODE HERE
-        //   3. Return an array of the file lines (1 line = 1 Msg)
-        //   CODE HERE
+
+        if(file_exists($fic)) {
+
+            foreach(file("$fic") as $line) {  
+
+                $no_msg++;
+                if (in_array($no_msg, $MsgNbr) {
+                    ;
+                } else {
+                    
+                    $arrayOfMsg[$i] = $line;
+                    $i++;
+                }
+
+            }
+          }
+        } else {
+
+            echo 'NOTICE : This user has no Message List' . '<br>';
+            $nb_msg = -1;
+        }
+
+
+
     }
 
     // List (Store fic of Msg contents in Array)
