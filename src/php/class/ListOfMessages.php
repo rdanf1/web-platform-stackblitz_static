@@ -4,16 +4,21 @@ class ListOfMessages
 {
     // properties:            // NB: Later with user management empty msg list created with account
                               // NB2 : The anonymous msg list can't be deleted ( modifications by admin )
-    private $nb_msg = 0;      // No Empty List created (but when all messages are deleted...)
+    private $nb_msg = 0;    /// ?= $this->nbMsg(); ///  // No Empty List created (but when all messages are deleted...)
     private $owner = 'Anon';  // Actually as a beginning : 1 single list callled Anon-MessageList
     private $name = 'Anon-MessageList';         // <owner> . '-MessageList'  (+ Increment if one to many - TODO...)
     private $ficName = 'Anon-MessageList.txt';  // <owner> . '-MessageList' . '.txt'
     private $htmName = 'Anon-MessageList.html'; // <owner> . '-MessageList' . '.html'
     
-    public function Name() {
+    // For further implementations ( ONE user TO MANY msg lists )
+    // Assume list exists (was constructed)
+    public function Name( $Owner = 'Anon' ) {
 
+        // what we use
+        $name = "$Owner" . '-MessageList';
+        $fic = "$name"  . '.txt';
 
-
+        return $name;
     }
 
     // construct
