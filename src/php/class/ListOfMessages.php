@@ -24,7 +24,7 @@ class ListOfMessages
     }
 
     // construct
-    public function __construct( $Owner = 'Anon', $Msg = NULL ) {
+    public function __construct( $Msg = NULL, $Owner = 'Anon' ) {
  
         $this->owner = $Owner ;
         // Calculated properties
