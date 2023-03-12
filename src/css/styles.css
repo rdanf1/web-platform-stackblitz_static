@@ -10,7 +10,7 @@ body {
 
   background-image: 
     linear-gradient(to left, transparent, rgb(44, 8, 83) 100%),
-    url("./img_dan-3.jpg")
+    url("/src/img/img_dan-3.webp")
 }
 
 #body-p2 {
@@ -20,7 +20,7 @@ body {
   
   background-image: 
     linear-gradient(to left, transparent, rgb(238, 203, 76) 114%),
-    url("./img_dan-3.jpg")
+    url("/src/img/img_dan-3.webp")
 }
 
 #body-p3, #nav-p3 {
@@ -29,7 +29,18 @@ body {
   font-family: system-ui, sans-serif;
   justify-content : right;
   background-image: 
-    linear-gradient(to left, transparent, rgb(190, 153, 27) 200%)
+    linear-gradient(to left, transparent, rgb(167, 156, 27) 80%),
+    url("/src/img/img_dan-3.webp")
+}
+
+#body-Msg {
+  margin: 0;
+  color: black;
+  font-family: system-ui, sans-serif;
+  
+  background-image: 
+    linear-gradient(to left, transparent, rgb(238, 203, 76) 214%),
+    url("/src/img/Msg_Paper.webp")
 }
 
 nav {

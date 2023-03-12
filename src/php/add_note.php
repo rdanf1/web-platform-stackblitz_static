@@ -1,4 +1,6 @@
+<meta http-equiv="refresh" content="2;/src/php/msgFile.html">
 
+<!--
 <main>
     <nav class="navbar navbar-expand-sm navbar-light bg-warning" aria-label="Fourth navbar example(Bootstrap 2023)">
       <div class="container-fluid">
@@ -14,7 +16,7 @@
       </div>
     </nav
 </main>
-
+-->
 <?php
   /*
   if (isset($Msg)) {
@@ -34,18 +36,18 @@
         file_put_contents($msgFile, $data . "\n", FILE_APPEND);
         
         /* log */
-        echo "<p style='font-size: 3rem;'>Written : $Msg<br></p>";
+        echo "<p style='font-size: 3rem;'>Message ajouté : <br><br>$Msg</p>";
 
         fclose($file);
     } else {
     /* if file does not exist create it for the first time with count 1 */
-        file_put_contents($msgFile, "<head><meta charset='utf-8'></head>");
+        file_put_contents($msgFile, "<head><meta charset='utf-8'></head>" . "\n");
         file_put_contents($msgFile, "<p style='font-size: 3rem; background: MediumSeaGreen'" . " class='bg-warning'" . "> Liste des Messages <br></p>" . "\n", FILE_APPEND);
         file_put_contents($msgFile, "<a href='/src/index.html'>Retour</a>" . "\n", FILE_APPEND);
         $data = "<p style='font-size: 3rem;'> $Msg<br></p>";
         file_put_contents($msgFile, $data . "\n", FILE_APPEND);
         /* log */
-        echo "<p style='font-size: 3rem;'>Written : $Msg<br></p>";
+        echo "<p style='font-size: 3rem;'>Message ajouté : <br><br>$Msg</p>";
     }
 } else {
     return 'Something Wrong!';

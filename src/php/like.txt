@@ -1,1 +1,1 @@
-likes=22
+likes=1
