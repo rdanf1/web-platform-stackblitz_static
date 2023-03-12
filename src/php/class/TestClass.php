@@ -34,8 +34,8 @@ $linesToDelete = [];
 for ($i = 1; $i <= 20; $i++) {
     array_push($linesToDelete, $i);
 }
-myEcho("deleting Messages N° : 3, 6, 9, 24");
-$ListeMsgs->delMsg($ListeMsgs->Owner(), $linesToDelete, 23, 6, 9, 24);
+myEcho("deleting Messages " . array_slice($linesToDelete));
+$ListeMsgs->delMsg($ListeMsgs->Owner(), array_slice($linesToDelete));
 myEcho("deleted Messages N° : 3, 6, 9, 24");
 
 $list_after_del = $ListeMsgs->listMsgs();
