@@ -34,7 +34,7 @@ class ListOfMessages
         
         // what we use
         $fic = $this->ficName;
-        $nb = $this->nbMsg
+        $nb = $this->nbMsg;
  
         // Implements :
         // A> Fic management - data persistence ( create / append + $Msg )
