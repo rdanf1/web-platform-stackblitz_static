@@ -9,7 +9,7 @@ class ListOfMessages
     private $name ;         // <owner> . '-MessageList'  (+ Increment if one to many - TODO...)
     private $ficName ;      // <owner> . '-MessageList' . '.txt'
     private $htmName ;      // <owner> . '-MessageList' . '.html'
-
+    
     // exposing properties methods
     public function nbMsg() {
         echo $this->nbMsg;
@@ -93,10 +93,12 @@ class ListOfMessages
     }
     
     // List (Store fic of Msg contents in Array)
-    public function list () {
-       
+    public function list ( $Name ) {
+        // Local
+        $arrayOfMsg = [];
+
         // what we use
-        $fic = $this->ficName;
+        $fic = $name . '.txt';
 
         echo 'In List func' . '<br>';
         // Implements :
