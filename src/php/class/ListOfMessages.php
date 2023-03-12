@@ -113,12 +113,13 @@ class ListOfMessages
             foreach(file("$fic") as $line) {  
 
                 $arrayOfMsg[$i] = $line;
+                $i++;
             }
         } else {
 
             echo 'NOTICE : This user has no Message List' . '<br>';
         }
-        
+
       return $arrayOfMsg;
     }
 
