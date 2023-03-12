@@ -92,6 +92,35 @@ class ListOfMessages
         //   3. Return an array of the file lines (1 line = 1 Msg)
         //   CODE HERE
     }
+
+    // Number of Messages ( Each line in fic is a message )
+    public function nbMsg ( $Owner = 'Anon' ) {
+        
+        // Local
+        $nbMsg = 0;
+
+        $name = $Owner . '-MessageList';
+        $arrayOfMsg = [];
+
+        // what we use
+        $fic = $name . '.txt';
+        
+        echo 'In List func' . '<br>';
+
+        if(file_exists($fic)) {
+
+            foreach(file("$fic") as $line) {  
+
+                $nbMsg++;
+            }
+        } else {
+
+            echo 'NOTICE : This user has no Message List' . '<br>';
+            $nbMsg = -1;
+        }
+
+      return $nbMsg;
+    }
     
     // List (Store fic of Msg contents in Array)
     public function listMsgs ( $Owner = 'Anon' ) {

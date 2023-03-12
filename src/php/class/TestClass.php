@@ -14,15 +14,18 @@ myEcho($ListeMsgs->name());
 
 myEcho($ListeMsgs->owner());
 
-myEcho($ListeMsgs->nbMsg());
+$nb_msg = $ListeMsgs->nbMsg('toto');
+myEcho($nb_msg);
 
 $ListeMsgs->addMsg("Msg to add");
 
-myEcho($ListeMsgs->nbMsg());
+$nb_msg = $ListeMsgs->nbMsg();
+myEcho($nb_msg);
 
 $ListeMsgs->addMsg("3rd Msg added");
 
-myEcho($ListeMsgs->nbMsg());
+$nb_msg = $ListeMsgs->nbMsg();
+myEcho($nb_msg);
 
 $list = $ListeMsgs->listMsgs();
 
