@@ -62,21 +62,13 @@ class ListOfMessages
     }
 
     // Add Msg (not NULL)
-    public function addMsg( $Msg ) {
+    public function addMsg( $Msg = NULL, $Owner = 'Anon' )  {
         
-        // what we use
-        $fic = $this->ficName;
-
         echo 'In addMsg' . '<br>';
         echo $Msg . '<br>';
-        // Implements :
-        // A> Fic management - data persistence ( create / append + $Msg )
-        //   1. File creation or open 'a' append mode
-        //   CODE HERE
-        //   2. $Msg added in file $ficname
-        //   CODE HERE
-        //   3. Return an array of the file lines (1 line = 1 Msg)
-        //   CODE HERE
+
+        this.__construct( $Msg, $Owner );
+        
     }  
 
      // Delete Msg
@@ -164,4 +156,40 @@ class ListOfMessages
         /* log */
         echo "<p style='font-size: 3rem;'>Message ajouté : <br><br>$Msg</p>";
     }
+
+
+// what we use
+        $fic = $this->ficName;
+        $nb = $this->nbMsg;
+
+        echo 'In addMsg' . '<br>';
+        echo $Msg . '<br>';
+
+        $nb = $nb + '1';
+        // Implements :
+        // A> Fic management - data persistence ( create / append + $Msg )
+        //   1. File creation or open 'a' append mode
+        //   CODE HERE
+        //   2. $Msg added in file $ficname
+        //   CODE HERE
+        //   3. Return an array of the file lines (1 line = 1 Msg)
+        //   CODE HERE
+        if(file_exists($fic)) {
+
+        /* read only the first line of the file as we don't intend to have more */
+          $file = fopen($fic, 'a');
+          $data = "$Msg\n";
+          file_put_contents($fic, $data . "\n", FILE_APPEND);
+          fclose($file);
+          
+          $nb = $nb + '1';
+          echo 'In Consruct : $nb value is ' . $nb . '<br>';
+        } else {
+        /* if file does not exist create it */
+          file_put_contents($fic, "$Msg\n");        
+        }
+        // Keep it
+        $this->nbMsg = $nb;
+
+
 -->
