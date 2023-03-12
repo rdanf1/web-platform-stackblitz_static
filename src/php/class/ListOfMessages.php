@@ -157,4 +157,4 @@ class ListOfMessages
         /* log */
         echo "<p style='font-size: 3rem;'>Message ajouté : <br><br>$Msg</p>";
     }
-
+-->
