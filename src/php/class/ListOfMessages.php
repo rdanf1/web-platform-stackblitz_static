@@ -36,6 +36,9 @@ class ListOfMessages
         $fic = $this->ficName;
         $nb = $this->nbMsg;
  
+        echo 'In Consruct' . '<br>';
+        echo $Msg . '<br>';
+
         // Implements :
         // A> Fic management - data persistence ( create / append + $Msg )
         //   1. File creation or open 'a' append mode
