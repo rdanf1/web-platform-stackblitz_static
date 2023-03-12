@@ -16,7 +16,7 @@ class ListOfMessages
         return $this->owner;
     }
 
-    public function Name( $Owner = 'Anon' ) {
+    public function Name() {
 
         return $this->name;
     }
