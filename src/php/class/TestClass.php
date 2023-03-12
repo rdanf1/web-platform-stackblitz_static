@@ -28,13 +28,20 @@ $nb_msg = $ListeMsgs->nbMsg();
 myEcho($nb_msg);
 
 $list = $ListeMsgs->listMsgs();
+var_dump($list);
 
-$ListeMsgs->delMsg(3);
+
+myEcho("deleting Messages N° : 3, 6, 9, 24");
+$ListeMsgs->delMsg(3, 6, 9, 24);
+myEcho("deleted Messages N° : 3, 6, 9, 24");
+
+$list_after_del = $ListeMsgs->listMsgs();
+var_dump($list);
 
 $ListeMsgs->display("List-toDisplay");
 
 $ListeMsgs->remove("List-toRemove");
 
-var_dump($list);
+
 
 ?>
