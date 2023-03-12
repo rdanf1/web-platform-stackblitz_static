@@ -129,6 +129,7 @@ class ListOfMessages
                     $arrayOfMsg[$i] = $line;
                     $i++;
                 }
+                
             }
             // Write array of messages in temporary file
             foreach($arrayOfMsg as $line) {
