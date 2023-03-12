@@ -30,6 +30,7 @@ myEcho($nb_msg);
 $list = $ListeMsgs->listMsgs();
 var_dump($list);
 
+$linesToDelete = [];
 for ($i = 1; $i <= 20; $i++) {
     array_push($linesToDelete, $i);
 }
