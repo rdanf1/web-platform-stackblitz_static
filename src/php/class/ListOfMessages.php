@@ -55,14 +55,16 @@ class ListOfMessages
           echo 'In Consruct : $nb value is ' . $nb . '<br>';
         } else {
         /* if file does not exist create it */
-          file_put_contents($fic, "$Msg\n");        
+          file_put_contents($fic, "$Msg\n");     
+          
+          $nb = $nb + '1';   
         }
         // Keep it
         $this->nbMsg = $nb;
     }
 
     // Add Msg (not NULL)
-    public function addMsg( $Msg = NULL, $Owner = 'Anon' )  {
+    public function addMsg( $Msg, $Owner = 'Anon' )  {
         
         echo 'In addMsg' . '<br>';
         echo $Msg . '<br>';
