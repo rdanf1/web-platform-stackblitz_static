@@ -2,9 +2,10 @@
 
 class ListOfMessages
 {
-    // properties:
-    private $nbMsg ;        // No Empty List created (but when all messages are deleted...)
-    private $owner = 'Adm'; // Actually s a beginning : 1 single list callled Adm-MessageList
+    // properties:          // NB: Later with user management empty msg list created with account
+                            // NB2 : The anonymous msg list can't be deleted ( modifications by admin )
+    private $nbMsg = 0;     // No Empty List created (but when all messages are deleted...)
+    private $owner = 'Anon';// Actually as a beginning : 1 single list callled Anon-MessageList
     private $name ;         // <owner> . '-MessageList'  (+ Increment if one to many - TODO...)
     private $ficName ;      // <owner> . '-MessageList' . '.txt'
     private $htmName ;      // <owner> . '-MessageList' . '.html'
@@ -23,7 +24,7 @@ class ListOfMessages
     }
 
     // construct
-    public function __construct( $Msg , $Owner ) {
+    public function __construct( $Owner = 'Anon', $Msg = NULL ) {
  
         $this->owner = $Owner ;
         // Calculated properties
@@ -108,6 +109,7 @@ class ListOfMessages
     public function display () {
 
         // what we use
+        $fic = $this->ficName;
         $htm = $this->htpName;
 
         echo 'In displayList func' . '<br>';
@@ -121,7 +123,9 @@ class ListOfMessages
         //   CODE HERE
     }
     public function remove () {
-      $NameFic = $this->$name . txt;
+        // what we use
+        $fic = $this->ficName;
+        $htm = $this->htpName;
 
       echo 'removing ' . $this->$name . '<br>';
         // Implements : deletion of Fic and view (html file) of the list 
