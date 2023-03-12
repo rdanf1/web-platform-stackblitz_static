@@ -4,7 +4,7 @@ class ListOfMessages
 {
     // properties:            // NB: Later with user management empty msg list created with account
                               // NB2 : The anonymous msg list can't be deleted ( modifications by admin )
-    private $nb_msg = $this->nbMsg();    /// ?= $this->nbMsg(); ///  // No Empty List created (but when all messages are deleted...)
+    private $nb_msg = 0;    /// ?= $this->nbMsg(); ///  // No Empty List created (but when all messages are deleted...)
     private $owner = 'Anon';  // Actually as a beginning : 1 single list callled Anon-MessageList
     private $name = 'Anon-MessageList';         // <owner> . '-MessageList'  (+ Increment if one to many - TODO...)
     private $ficName = 'Anon-MessageList.txt';  // <owner> . '-MessageList' . '.txt'
@@ -45,13 +45,15 @@ class ListOfMessages
 
         if(file_exists($fic)) {
 
+          $nb = $this->nbMsg();
+
         /* read only the first line of the file as we don't intend to have more */
           $file = fopen($fic, 'a');
           file_put_contents($fic, $data, FILE_APPEND);
           fclose($file);
           
           $nb = $nb + '1';
-          echo 'In Consruct : $nb value is ' . $nb . '<br>';
+          
         } else {
         /* if file does not exist create it */
           file_put_contents($fic, $data);     
@@ -60,6 +62,7 @@ class ListOfMessages
         }
         // Keep it
         $this->nb_msg = $nb;
+        echo 'In Consruct, nb_msg = ' . "$nb" . '<br>';
     }
 
     // Add Msg (not NULL)
