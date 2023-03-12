@@ -125,9 +125,9 @@ class ListOfMessages
             foreach(file("$fic") as $line) {  
 
                 $no_msg++;
-                if (! in_array($no_msg, $MsgNbr) {  
-                    echo "shit";
-                    // array_push($arrayOfMsg, $line);
+                if (! in_array($no_msg, $MsgNbr)) {
+                    
+                    array_push($arrayOfMsg, $line);
                     $i++;
                 }
 
