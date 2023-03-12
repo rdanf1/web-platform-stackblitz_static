@@ -113,27 +113,32 @@ class ListOfMessages
         $i = 0;
         
         // what we use
-        $name = $Owner . '-MessageList';
-        $fic = $name . '.txt';
-        $fic_tmp = $name . '.txt.tmp';
+        $name = "$Owner" . '-MessageList';
+        $fic = "$name" . '.txt';
+        $fic_tmp = "$name" . '.txt.tmp';
 
         echo 'In delMsg func' . '<br>';
 
         if(file_exists($fic)) {
-
+            // Create array of messages from list
+            //                 without suppressed messages 
             foreach(file("$fic") as $line) {  
 
                 $no_msg++;
                 if (in_array($no_msg, $MsgNbr) {
                     ;
-                } else {
-                    
+                } else {                   
                     $arrayOfMsg[$i] = $line;
                     $i++;
                 }
-
             }
-          }
+            // Write array of messages in temporary file
+            foreach($arrayOfMsg as $line) {
+                file_put_contents("$fic_tmp", $line, FILE_APPEND);
+            }
+            // Apply modofications
+            rename("$fic_tmp","fic");
+          
         } else {
 
             echo 'NOTICE : This user has no Message List' . '<br>';
