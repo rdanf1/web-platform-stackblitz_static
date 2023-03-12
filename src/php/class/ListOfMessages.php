@@ -54,8 +54,8 @@ class ListOfMessages
         
     }
 
-    // Add Msg
-    public function addMsg( $Msg = 'Mon 1er Message') {
+    // Add Msg (not NULL)
+    public function addMsg( $Msg ) {
         
         // what we use
         $fic = $this->ficName;
@@ -73,7 +73,8 @@ class ListOfMessages
     }  
 
      // Delete Msg
-    public function delMsg( $MsgNbr ) {  //  = $this->nbMsg
+     // If $MsgNbr is NULL (no parameter given) erase all messages
+    public function delMsg( $MsgNbr = NULL ) {  //  = $this->nbMsg
         
         // what we use
         $fic = $this->ficName;
@@ -126,7 +127,7 @@ class ListOfMessages
         $fic = $this->ficName;
         $htm = $this->htpName;
 
-      echo 'removing ' . $this->$name . '<br>';
+      echo 'removing ' . $this->name . '<br>';
         // Implements : deletion of Fic and view (html file) of the list 
     }
   
