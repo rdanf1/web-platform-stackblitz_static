@@ -23,6 +23,7 @@ $nb_msg = $ListeMsgs->nbMsg();
 myEcho($nb_msg);
 
 $ListeMsgs->addMsg("3rd Msg added");
+$ListeMsgs->addMsg("4th Msg added");
 
 $nb_msg = $ListeMsgs->nbMsg();
 myEcho($nb_msg);
@@ -31,7 +32,7 @@ $list = $ListeMsgs->listMsgs();
 var_dump($list);
 
 $linesToDelete = [];
-for ($i = 1; $i <= 20; $i++) {
+for ($i = 1; $i <= 2; $i++) {
     array_push($linesToDelete, $i);
 }
 myEcho("deleting Messages " . array_slice($linesToDelete, 0));
