@@ -34,8 +34,8 @@ class ListOfMessages
         $fic = $this->ficName;
         $nb = $this->nb_msg;
  
-        echo 'In Consruct' . '<br>';
-        echo $Msg . '<br>';
+        /// echo 'In Consruct' . '<br>';
+        /// echo $Msg . '<br>';
 
         // Implements :
         // A> Fic management - data persistence ( create / append + $Msg )
@@ -63,14 +63,14 @@ class ListOfMessages
         }
         // Keep it
         $this->nb_msg = $nb;
-        echo 'In Consruct, nb_msg = ' . "$nb" . '<br>';
+        /// echo 'In Consruct, nb_msg = ' . "$nb" . '<br>';
     }
 
     // Add Msg (not NULL)
     public function addMsg( $Msg, $Owner = 'Anon' )  {
         
-        echo 'In addMsg' . '<br>';
-        echo $Msg . '<br>';
+        /// echo 'In addMsg' . '<br>';
+        /// echo $Msg . '<br>';
 
         $this->__construct( $Msg, $Owner );
         
@@ -80,14 +80,13 @@ class ListOfMessages
     public function nbMsg ( $Owner = 'Anon' ) {
     
         // Local
-        $nb_msg = 0;    
-        $arrayOfMsg = [];
+        $nb_msg = 0;
 
         // what we use
         $name = $Owner . '-MessageList';
         $fic = $name . '.txt';
         
-        echo 'In nbMsg func' . '<br>';
+        /// echo 'In nbMsg func' . '<br>';
 
         if(file_exists($fic)) {
 
@@ -104,23 +103,59 @@ class ListOfMessages
       return $nb_msg;
     }
 
-     // Delete Msg
-     // If $MsgNbr is NULL (no parameter given) erase all messages
-    public function delMsg( $MsgNbr = NULL ) {  //  = $this->nbMsg
+     // Only Owner of the List can delete Msg (TODO : User Mgmnt & Policy)
+     // Delete Msg numbers given as parameters
+    public function delMsg(string $Owner, $MsgNbr) {
+
+        // Local
+        $no_msg = 0;    
+        $arrayOfMsg = [];
+        $i = 0;
         
         // what we use
-        $fic = $this->ficName;
+        $name = "$Owner" . '-MessageList';
+        $fic = "$name" . '.txt';
+        $fic_tmp = "$name" . '.txt.tmp';
 
-        echo 'In delMsg func' . '<br>';
-        echo 'Number of the line of the message list to be deleted : ' . $MsgNbr . '<br>';
-        // Implements :
-        // A> Fic management - data persistence ( create / append + $Msg )
-        //   1. File creation or open 'a' append mode
-        //   CODE HERE
-        //   2. $Msg added in file $ficname
-        //   CODE HERE
-        //   3. Return an array of the file lines (1 line = 1 Msg)
-        //   CODE HERE
+        /// echo 'In delMsg func' . '<br>';
+        /// echo '$fic value : ' . "$fic" . '<br>';
+
+        if(file_exists($fic)) {
+            // Create array of messages from list
+            //                 without suppressed messages 
+            foreach(file("$fic") as $line) {  
+
+                $no_msg++;
+                if (! in_array($no_msg, $MsgNbr)) {
+
+                    array_push($arrayOfMsg, $line);
+                    $i++;
+                } /*else {
+                    echo 'IN MSG TO DEL' . '<br>';
+                } */
+
+            }
+
+            // If all Msg have been deleted (create empty fic_tmp)
+            touch($fic_tmp);
+            // Write array of messages in temporary file
+            foreach($arrayOfMsg as $line) {
+                file_put_contents("$fic_tmp", $line, FILE_APPEND);
+            }
+            // Apply modifications
+            rename("$fic_tmp","$fic");
+            // All ok
+            return 0;
+          
+        } else {
+
+            echo 'NOTICE : This user has no Message List' . '<br>';
+            // Error
+            return -1;
+        }
+
+
+
     }
 
     // List (Store fic of Msg contents in Array)
@@ -134,11 +169,10 @@ class ListOfMessages
         // what we use
         $fic = $name . '.txt';
         
-        echo 'In List func' . '<br>';
+        ///echo 'In List func' . '<br>';
         // Implements :
         //   3. Return an array of the fic of Msg lines (1 line = 1 Msg) 
-        //   CODE HERE
-        if(file_exists($fic)) {
+       if(file_exists($fic)) {
 
             foreach(file("$fic") as $line) {  
 
@@ -169,13 +203,16 @@ class ListOfMessages
         //   CODE HERE
         //   3. Add footer of List of Message Page (fixed .foot file ?)
         //   CODE HERE
+ 
     }
+
+    // Remove all Messages
     public function remove () {
         // what we use
         $fic = $this->ficName;
         $htm = $this->htpName;
 
-      echo 'removing ' . $this->name . '<br>';
+        echo 'removing ' . $this->name . '<br>';
         // Implements : deletion of Fic and view (html file) of the list 
     }
   
