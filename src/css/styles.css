@@ -19,10 +19,10 @@ body {
   font-family: system-ui, sans-serif;
   
   background-image: 
-    linear-gradient(to left, transparent, rgb(238, 203, 76) 114%),
+    linear-gradient(to left, transparent, rgb(238, 203, 76) 90%),
     url("/src/img/img_dan-3.webp")
 }
-/*
+
 #body-p3 {
   margin: 0;
   color: black;
@@ -31,7 +31,7 @@ body {
   background-image: 
     linear-gradient(to left, transparent, rgb(167, 156, 27) 80%),
     url("/src/img/img_dan-3.webp")
-}*/
+}
 
 #body-Msg {
   margin: 0;
