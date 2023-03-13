@@ -43,6 +43,12 @@ body {
     url("/src/img/Msg_Paper.webp")
 }
 
+/*
+nav {
+  border-end-start-radius: 5px 5px;
+  border-end-end-radius: 5px 5px;
+}
+
 /*nav {
   display: flex;
   flex-wrap: wrap;
@@ -55,19 +61,28 @@ body {
   /*background-image: url("./img_dan2-2.png");
   /* background-image: linear-gradient(to left, violet, yellow, cyan, green, blue, red);
   /* background-color: #eee;*/
+
 .navbar {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(to right, rgb(216, 200, 55), rgb(160, 183, 160));
+    border-start-start-radius: 10px 10px;
+    border-start-end-radius: 10px 10px;
+    
 }
 
-.breadcrumb {
+ol.breadcrumb {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  padding: 0.8rem
+  /*border: solid 5px rgb(119, 105, 150);*/
+  padding: 0.3rem;
+  background: linear-gradient(to right, rgb(216, 200, 55), rgb(52, 133, 52));
+  border-end-start-radius: 15px 5px;
+  border-end-end-radius: 15px 5px
 }
 
 .navbar a {
@@ -101,8 +116,9 @@ nav a[aria-current='Saisie Msg'] {
 
 #bt_likes {
   /*
-  */background-color: 
-  linear-gradient(to right, red, yellow, green, cyan, blue, violet);*/
+  */
+  background-color: 
+      linear-gradient(to right, red, yellow, green, cyan, blue, violet);*/
   padding: 0.8rem
 } 
 
