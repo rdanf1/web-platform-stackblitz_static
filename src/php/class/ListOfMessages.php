@@ -34,8 +34,8 @@ class ListOfMessages
         $fic = $this->ficName;
         $nb = $this->nb_msg;
  
-        echo 'In Consruct' . '<br>';
-        echo $Msg . '<br>';
+        /// echo 'In Consruct' . '<br>';
+        /// echo $Msg . '<br>';
 
         // Implements :
         // A> Fic management - data persistence ( create / append + $Msg )
@@ -63,14 +63,14 @@ class ListOfMessages
         }
         // Keep it
         $this->nb_msg = $nb;
-        echo 'In Consruct, nb_msg = ' . "$nb" . '<br>';
+        /// echo 'In Consruct, nb_msg = ' . "$nb" . '<br>';
     }
 
     // Add Msg (not NULL)
     public function addMsg( $Msg, $Owner = 'Anon' )  {
         
-        echo 'In addMsg' . '<br>';
-        echo $Msg . '<br>';
+        /// echo 'In addMsg' . '<br>';
+        /// echo $Msg . '<br>';
 
         $this->__construct( $Msg, $Owner );
         
@@ -86,7 +86,7 @@ class ListOfMessages
         $name = $Owner . '-MessageList';
         $fic = $name . '.txt';
         
-        echo 'In nbMsg func' . '<br>';
+        /// echo 'In nbMsg func' . '<br>';
 
         if(file_exists($fic)) {
 
@@ -117,9 +117,8 @@ class ListOfMessages
         $fic = "$name" . '.txt';
         $fic_tmp = "$name" . '.txt.tmp';
 
-        echo 'In delMsg func' . '<br>';
-        echo '$fic value : ' . "$fic" . '<br>';
-        var_dump($MsgNbr);
+        /// echo 'In delMsg func' . '<br>';
+        /// echo '$fic value : ' . "$fic" . '<br>';
 
         if(file_exists($fic)) {
             // Create array of messages from list
@@ -131,14 +130,12 @@ class ListOfMessages
 
                     array_push($arrayOfMsg, $line);
                     $i++;
-                } else {
+                } /*else {
                     echo 'IN MSG TO DEL' . '<br>';
-                }
+                } */
 
             }
-            echo 'ARRAY OF MESSAGES VAR_DUMP' . '<br>';
-            var_dump($arrayOfMsg);
-            
+
             // If all Msg have been deleted (create empty fic_tmp)
             touch($fic_tmp);
             // Write array of messages in temporary file
@@ -147,11 +144,14 @@ class ListOfMessages
             }
             // Apply modifications
             rename("$fic_tmp","$fic");
+            // All ok
+            return 0;
           
         } else {
 
             echo 'NOTICE : This user has no Message List' . '<br>';
-            $nb_msg = -1;
+            // Error
+            return -1;
         }
 
 
@@ -169,11 +169,10 @@ class ListOfMessages
         // what we use
         $fic = $name . '.txt';
         
-        echo 'In List func' . '<br>';
+        ///echo 'In List func' . '<br>';
         // Implements :
         //   3. Return an array of the fic of Msg lines (1 line = 1 Msg) 
-        //   CODE HERE
-        if(file_exists($fic)) {
+       if(file_exists($fic)) {
 
             foreach(file("$fic") as $line) {  
 
@@ -213,7 +212,7 @@ class ListOfMessages
         $fic = $this->ficName;
         $htm = $this->htpName;
 
-      echo 'removing ' . $this->name . '<br>';
+        echo 'removing ' . $this->name . '<br>';
         // Implements : deletion of Fic and view (html file) of the list 
     }
   

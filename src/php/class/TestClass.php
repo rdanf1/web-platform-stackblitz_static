@@ -32,7 +32,7 @@ myEcho($nb_msg);
 
 $list = $ListeMsgs->listMsgs();
 var_dump($list);
-myEcho("");
+myEcho("END VARduMP");
 
 $linesToDelete = [];
 for ($i = 1; $i <= 2; $i++) {
