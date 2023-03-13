@@ -136,10 +136,12 @@ class ListOfMessages
                 }
 
             }
-            // Write array of messages in temporary file
             echo 'ARRAY OF MESSAGES VAR_DUMP' . '<br>';
             var_dump($arrayOfMsg);
-
+            
+            // If all Msg have been deleted (create empty fic_tmp)
+            touch($fic_tmp);
+            // Write array of messages in temporary file
             foreach($arrayOfMsg as $line) {
                 file_put_contents("$fic_tmp", $line, FILE_APPEND);
             }
