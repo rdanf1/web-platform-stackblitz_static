@@ -22,8 +22,8 @@ body {
     linear-gradient(to left, transparent, rgb(238, 203, 76) 114%),
     url("/src/img/img_dan-3.webp")
 }
-
-#body-p3, #nav-p3 {
+/*
+#body-p3 {
   margin: 0;
   color: black;
   font-family: system-ui, sans-serif;
@@ -31,7 +31,7 @@ body {
   background-image: 
     linear-gradient(to left, transparent, rgb(167, 156, 27) 80%),
     url("/src/img/img_dan-3.webp")
-}
+}*/
 
 #body-Msg {
   margin: 0;
@@ -43,7 +43,13 @@ body {
     url("/src/img/Msg_Paper.webp")
 }
 
+/*
 nav {
+  border-end-start-radius: 5px 5px;
+  border-end-end-radius: 5px 5px;
+}
+
+/*nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -51,15 +57,37 @@ nav {
   padding: 0.2rem;
   gap: 0.2rem;
   border: solid 3px rgb(119, 105, 150);
-  background-color: goldenrod;
+  background-color: goldenrod
   /*background-image: url("./img_dan2-2.png");
   /* background-image: linear-gradient(to left, violet, yellow, cyan, green, blue, red);
   /* background-color: #eee;*/
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(216, 200, 55), rgb(160, 183, 160));
+    border-start-start-radius: 10px 10px;
+    border-start-end-radius: 10px 10px;
+    
 }
 
-nav a {
+ol.breadcrumb {
   display: flex;
-  min-width: 6rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  /*border: solid 5px rgb(119, 105, 150);*/
+  padding: 0.3rem;
+  background: linear-gradient(to right, rgb(216, 200, 55), rgb(52, 133, 52));
+  border-end-start-radius: 15px 5px;
+  border-end-end-radius: 15px 5px
+}
+
+.navbar a {
+  display: flex;
+  min-width: 5rem;
   padding: 0.2rem;
   border-radius: 0.2rem;
   border: solid 3px rgb(2, 44, 159);
@@ -70,31 +98,32 @@ nav a {
   background-color: linear-gradient(to right, red, yellow, green, cyan, blue, violet); */
   margin-left: 3px;
   margin-right: 3px;
-  justify-content : center;
+  justify-content : center
 }
 
 nav a[aria-current='page2'], nav a[aria-current='Messages'] {
   background-color: rgb(171, 212, 95);
-  padding: 0.8rem; 
+  padding: 0.8rem
 }
 
-#bt_likes {
-  /*
-  */background-color: 
-  linear-gradient(to right, red, yellow, green, cyan, blue, violet);*/
-  padding: 0.8rem; 
-} 
-
-nav a[aria-current='page3'],
+/*nav a[aria-current='page3'],*/
 nav a[aria-current='Saisie Msg'] {
   background-color: rgb(197, 98, 197);
   /*background-color: 
   linear-gradient(to right, red, yellow, green, cyan, blue, violet);*/
-  padding: 0.6rem; 
+  padding: 0.6rem
+} 
+
+#bt_likes {
+  /*
+  */
+  background-color: 
+      linear-gradient(to right, red, yellow, green, cyan, blue, violet);*/
+  padding: 0.8rem
 } 
 
 main {
-  padding: 0.5rem;
+  padding: 0.5rem
 }
 
 h1, h2, /*h3,*/ h4, a { 
@@ -102,9 +131,9 @@ h1, h2, /*h3,*/ h4, a {
 /*font-size: 1.5rem; */ 
   color: black;
   mix-blend-mode: substract;
-  height: 100%;
+  height: 100%
 }
 
 #nav-p2 a {
-  border: solid 4px rgb(155, 101, 154);
+  border: solid 4px rgb(155, 101, 154)
 } 
