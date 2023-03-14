@@ -131,7 +131,8 @@ main {
 
 h1, h2, /*h3,*/ h4, a { 
   display: flex;
-  align-items: center;
+  flex-wrap: row;
+  align-items: right;
   font-weight: semi-bold; 
 /*font-size: 1.5rem; */ 
   color: black;
