@@ -80,13 +80,7 @@
   
         <div class="navbar-collapse collapse" id="navbarsExample04" style="">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/src/index.html">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/src/page2.html">ZOUZOUS</a>
-            </li>
-            <!--<li class="nav-item">
+           <!--<li class="nav-item">
               <a class="nav-link disabled">HS</a>
             </li>-->
             <li class="nav-item dropdown">
@@ -104,6 +98,16 @@
         </div>
       </div>
     </nav>
+    <nav aria-label="breadcrumb">
+      <!-- Déclaration du composant -->
+      <ol class="breadcrumb">
+        <!-- Item du fil d'ariane -->
+       <li class="breadcrumb-item"><a href="/src/index.html">Accueil</a></li>
+       <li class="breadcrumb-item"><a href="/src/page2.html">Accueil</a></li>
+       <li class="breadcrumb-item"><a href="/src/page3-B-Cards.html">Test B-Cards</a></li>     
+       <li class="breadcrumb-item active">Interactions</li>     
+      </ol>
+   </nav>
     <main>
     
       <button style="background: Tomato;" id="bt_likes" type="button" href="javascript:void(0)" onclick="like()">
