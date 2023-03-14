@@ -103,6 +103,7 @@ ol.breadcrumb {
 }
 
 nav a[aria-current='page2'], nav a[aria-current='Messages'] {
+  align-items: center;
   background-color: rgb(171, 212, 95);
   padding: 0.8rem
 }
