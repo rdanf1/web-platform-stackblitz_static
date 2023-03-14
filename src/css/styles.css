@@ -3,6 +3,11 @@
 }
 
 body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
   margin: 0;
   color: black;
   font-family: system-ui, sans-serif;
@@ -71,10 +76,6 @@ nav {
   /* background-color: #eee;*/
 
 .navbar {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     background: linear-gradient(to right, rgb(216, 200, 55), rgb(160, 183, 160));
     border-start-start-radius: 10px 10px;
     border-start-end-radius: 10px 10px;
