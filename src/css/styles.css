@@ -2,12 +2,15 @@
   box-sizing: border-box;
 }
 
-body {
+.none {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  
+}
+
+body {
+
   margin: 0;
   color: black;
   font-family: system-ui, sans-serif;
@@ -49,31 +52,10 @@ body {
 }
 
 h1, h2, /*h3,*/ h4, a { 
-  display: flex;
-  font-weight: bold; 
-/*font-size: 1.5rem; */ 
   color: black;
   mix-blend-mode: substract;
   height: 100%
 }
-/*
-nav {
-  border-end-start-radius: 5px 5px;
-  border-end-end-radius: 5px 5px;
-}
-
-/*nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 0.2rem;
-  gap: 0.2rem;
-  border: solid 3px rgb(119, 105, 150);
-  background-color: goldenrod
-  /*background-image: url("./img_dan2-2.png");
-  /* background-image: linear-gradient(to left, violet, yellow, cyan, green, blue, red);
-  /* background-color: #eee;*/
 
 .navbar {
     background: linear-gradient(to right, rgb(216, 200, 55), rgb(160, 183, 160));
@@ -83,7 +65,7 @@ nav {
 }
 
 ol.breadcrumb {
-  display: flex;
+  /*display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
@@ -95,8 +77,6 @@ ol.breadcrumb {
 }
 
 .navbar a {
-  display: flex;
-  align-items: center;
   min-width: 5rem;
   padding: 0.2rem;
   border-radius: 0.2rem;
@@ -104,16 +84,11 @@ ol.breadcrumb {
   text-align: center;
   text-decoration: none;
   color: rgb(8, 35, 7);
-/*color: linear-gradient(to left, red, yellow, green, cyan, blue, violet);
-  background-color: linear-gradient(to right, red, yellow, green, cyan, blue, violet); */
   margin-left: 3px;
   margin-right: 3px;
-  justify-content : center
 }
 
 nav a[aria-current='page2'], nav a[aria-current='Messages'] {
-  display: flex;
-  align-items: center;
   background-color: rgb(171, 212, 95);
   padding: 0.8rem
 }
