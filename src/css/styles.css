@@ -130,7 +130,7 @@ main {
 }
 
 h1, h2, /*h3,*/ h4, a { 
-  display: table-row-group;
+  display: none;
   font-weight: bold; 
 /*font-size: 1.5rem; */ 
   color: black;
