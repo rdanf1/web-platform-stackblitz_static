@@ -103,10 +103,10 @@
       <ol class="breadcrumb">
         <!-- Item du fil d'ariane -->
        <li class="breadcrumb-item"><a href="/src/index.html">Accueil</a></li>
-       <li class="breadcrumb-item"><a href="/src/page2.html>Page Zous</a></li>
+       <li class="breadcrumb-item"><a href="/src/page2.html">Accueil</a></li>
        <li class="breadcrumb-item"><a href="/src/page3-B-Cards.html">Test B-Cards</a></li>     
        <li class="breadcrumb-item active">Interactions</li>     
-   </ol>
+      </ol>
    </nav>
     <main>
     
