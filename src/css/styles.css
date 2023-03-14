@@ -43,6 +43,14 @@ body {
     url("/src/img/Msg_Paper.webp")
 }
 
+h1, h2, /*h3,*/ h4, a { 
+  display: none;
+  font-weight: bold; 
+/*font-size: 1.5rem; */ 
+  color: black;
+  mix-blend-mode: substract;
+  height: 10%
+}
 /*
 nav {
   border-end-start-radius: 5px 5px;
@@ -86,8 +94,8 @@ ol.breadcrumb {
 }
 
 .navbar a {
-  display: flex;
-  align-items: center;
+  /*display: flex;
+  align-items: center;*/
   min-width: 5rem;
   padding: 0.2rem;
   border-radius: 0.2rem;
@@ -127,15 +135,6 @@ nav a[aria-current='Saisie Msg'] {
 
 main {
   padding: 0.5rem
-}
-
-h1, h2, /*h3,*/ h4, a { 
-  display: none;
-  font-weight: bold; 
-/*font-size: 1.5rem; */ 
-  color: black;
-  mix-blend-mode: substract;
-  height: 10%
 }
 
 #nav-p2 a {
