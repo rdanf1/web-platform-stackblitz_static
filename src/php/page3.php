@@ -90,6 +90,7 @@
               <a class="nav-link disabled">HS</a>
             </li>-->
             <li class="nav-item dropdown">
+              <a href="/src/php/msgFile.html" aria-current="Messages">Messages</a>
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Autres</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Une Action du sous-menu</a></li>
