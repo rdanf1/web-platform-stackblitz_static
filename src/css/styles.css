@@ -94,8 +94,8 @@ ol.breadcrumb {
 }
 
 .navbar a {
-  /*display: flex;
-  align-items: center;*/
+  display: flex;
+  align-items: center;
   min-width: 5rem;
   padding: 0.2rem;
   border-radius: 0.2rem;
@@ -111,8 +111,8 @@ ol.breadcrumb {
 }
 
 nav a[aria-current='page2'], nav a[aria-current='Messages'] {
-  /*display: flex;
-  align-items: center;*/
+  display: flex;
+  align-items: center;
   background-color: rgb(171, 212, 95);
   padding: 0.8rem
 }
