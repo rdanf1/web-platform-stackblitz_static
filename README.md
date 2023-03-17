@@ -5,7 +5,7 @@
           the repo named **"jinja2-first-fastapi"** <br> branch (migrate-from-php)
           [I'M NOT SURE THIS IS TO BE NOTICED AS "GOOD PRACTICES]<br>
           => Any help to circomvince this and share data space while
-             at the same time updating 2 projects without rewriting<br>
+             at the same time <br> updating 2 projects without rewriting
              Is Welcome !!!<br>
 Means locally src directory goes out there:  
 https://github.com/rdanf1/jinja2-first-fastapi/blob/migrate-from-php/<templates>
