@@ -1,14 +1,17 @@
 # web-platform-stackblitz_static
 
-WARNING : This repo branch ( migrating-to-jimja2 ) locally on server<br>
-          share src directory (linked localy ) with<br> 
-          the repo named **"jinja2-first-fastapi"** branch (migrate-from-php)<br>
+**WARNING** :<br> This repo branch ( migrating-to-jimja2 ) locally on server<br>
+          share src directory (linked localy ) with 
+          the repo named **"jinja2-first-fastapi"** <br> branch (migrate-from-php)
           [I'M NOT SURE THIS IS TO BE NOTICED AS "GOOD PRACTICES]<br>
-          => Any help to circomvince this and share data space while <br>
+          => Any help to circomvince this and share data space while
              at the same time updating 2 projects without rewriting<br>
-             Is Welcome !!!
-Means locally <this>.src goes there:  
+             Is Welcome !!!<br>
+Means locally src directory goes out there:  
 https://github.com/rdanf1/jinja2-first-fastapi/blob/migrate-from-php/<templates>
+
+ISSUES envolved : Few space on my testing server, don't like to re-write.
+
 
 *REMINDER* : Ctrl-SHIFT-V paste previously copied buffer in VI !!! (insertion mode)
 
